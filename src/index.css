@@ -1,0 +1,450 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg-main: #FAF8F5;
+  --bg-card: #FFFFFF;
+  --text-main: #111A24;
+  --text-muted: #5E6D77;
+  --accent-primary: #0A1926;
+  --accent-gold: #B8924B;
+  --border-color: #E8E2D8;
+}
+
+[data-theme="ldc-original"] {
+  --bg-main: #FFFFFF;
+  --bg-card: #F8FAFC;
+  --text-main: #0F172A;
+  --text-muted: #475569;
+  --accent-primary: #1E3A8A;
+  --accent-gold: #0284C7;
+  --border-color: #E2E8F0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* ==========================================================================
+   GLOBAL SYNCHRONIZED ANIMATION SYSTEM (Laser Dental Clinic / Convertix_studio)
+   ========================================================================== */
+
+/* Timing & Easing Architecture */
+:root {
+  --ldc-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ldc-dur-small: 500ms;
+  --ldc-dur-text: 750ms;
+  --ldc-dur-card: 850ms;
+  --ldc-dur-section: 950ms;
+  --ldc-dur-page: 600ms;
+}
+
+/* --------------------------------------------------------------------------
+   Category A: Page Load and Scroll Animation
+   -------------------------------------------------------------------------- */
+@keyframes ldcPageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ldcScrollReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ldc-anim-page {
+  animation: ldcPageEnter var(--ldc-dur-page) var(--ldc-ease) both;
+}
+
+.ldc-anim-scroll-section {
+  animation: ldcScrollReveal var(--ldc-dur-section) var(--ldc-ease) both;
+}
+
+/* --------------------------------------------------------------------------
+   Category B: Page Load and Pop-up Animation
+   -------------------------------------------------------------------------- */
+@keyframes ldcPopup {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.ldc-anim-popup {
+  animation: ldcPopup var(--ldc-dur-card) var(--ldc-ease) both;
+}
+
+/* --------------------------------------------------------------------------
+   Category C: Zoom Out and Zoom In Animation
+   -------------------------------------------------------------------------- */
+@keyframes ldcZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ldcZoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ldc-anim-zoom-in {
+  animation: ldcZoomIn var(--ldc-dur-card) var(--ldc-ease) both;
+}
+
+.ldc-anim-zoom-out {
+  animation: ldcZoomOut var(--ldc-dur-card) var(--ldc-ease) both;
+}
+
+/* Interactive photograph zoom (smooth optical scaling without cropping) */
+.ldc-interactive-zoom {
+  transition: transform 750ms var(--ldc-ease);
+}
+.group:hover .ldc-interactive-zoom,
+.ldc-interactive-zoom:hover {
+  transform: scale(1.035);
+}
+
+/* --------------------------------------------------------------------------
+   Category D: Fade In and Scale Animation
+   -------------------------------------------------------------------------- */
+@keyframes ldcFadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.ldc-anim-fade-scale {
+  animation: ldcFadeScale var(--ldc-dur-text) var(--ldc-ease) both;
+}
+
+/* --------------------------------------------------------------------------
+   Category E: Stagger and Drop Down Animation
+   -------------------------------------------------------------------------- */
+@keyframes ldcDropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ldc-anim-drop-down {
+  animation: ldcDropDown 550ms var(--ldc-ease) both;
+}
+
+/* --------------------------------------------------------------------------
+   Category F: Stagger and Scale Animation
+   -------------------------------------------------------------------------- */
+@keyframes ldcStaggerScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.93) translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.ldc-anim-stagger-scale {
+  animation: ldcStaggerScale 700ms var(--ldc-ease) both;
+}
+
+/* Stagger delay steps (100–160ms cadence) */
+.stagger-1 { animation-delay: 80ms; }
+.stagger-2 { animation-delay: 180ms; }
+.stagger-3 { animation-delay: 280ms; }
+.stagger-4 { animation-delay: 380ms; }
+.stagger-5 { animation-delay: 480ms; }
+.stagger-6 { animation-delay: 580ms; }
+.stagger-7 { animation-delay: 680ms; }
+.stagger-8 { animation-delay: 780ms; }
+
+/* Backward-compatible text animations */
+@keyframes ldcBlurToFocus {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+@keyframes ldcFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ldcWordReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes ldcCharReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes ldcMaskReveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0% 0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes ldcParagraphReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ldc-anim-blur {
+  animation: ldcBlurToFocus 0.75s var(--ldc-ease) both;
+}
+
+.ldc-anim-fade-up {
+  animation: ldcFadeUp 0.75s var(--ldc-ease) both;
+}
+
+.ldc-anim-word {
+  animation: ldcWordReveal 0.55s var(--ldc-ease) both;
+}
+
+.ldc-anim-char {
+  animation: ldcCharReveal 0.45s var(--ldc-ease) both;
+}
+
+.ldc-anim-mask {
+  animation: ldcMaskReveal 0.8s var(--ldc-ease) both;
+}
+
+.ldc-anim-paragraph {
+  animation: ldcParagraphReveal 0.85s var(--ldc-ease) both;
+}
+
+.scroll-reveal {
+  animation: ldcScrollReveal var(--ldc-dur-section) var(--ldc-ease) both;
+}
+
+/* Strict prefers-reduced-motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .ldc-anim-page,
+  .ldc-anim-scroll-section,
+  .ldc-anim-popup,
+  .ldc-anim-zoom-in,
+  .ldc-anim-zoom-out,
+  .ldc-interactive-zoom,
+  .ldc-anim-fade-scale,
+  .ldc-anim-drop-down,
+  .ldc-anim-stagger-scale,
+  .scroll-reveal,
+  .ldc-anim-blur,
+  .ldc-anim-fade-up,
+  .ldc-anim-word,
+  .ldc-anim-char,
+  .ldc-anim-mask,
+  .ldc-anim-paragraph {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+    transition: none !important;
+  }
+}
+
+/* Clinical Hairline Divider with Micron Metric */
+.ldc-divider-micron {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--border-color) 20%, var(--border-color) 80%, transparent 100%);
+}
+
+/* PARALLAX LAYERS (from reference design) */
+.parallax-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.parallax-layer {
+  position: absolute;
+  will-change: transform;
+  opacity: 0.35;
+  filter: blur(1px);
+}
+.parallax-layer:nth-child(1) { top: 10%; left: 5%; width: 140px; }
+.parallax-layer:nth-child(2) { top: 60%; left: 12%; width: 120px; }
+.parallax-layer:nth-child(3) { top: 20%; right: 8%; width: 160px; }
+.parallax-layer:nth-child(4) { bottom: 15%; right: 5%; width: 130px; }
+.parallax-layer img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(43,23,71,.15);
+  animation: float 6s ease-in-out infinite;
+}
+.parallax-layer:nth-child(even) img {
+  animation-delay: -3s;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(1.5deg); }
+}
+
+/* LASER TITLE BEAM SWEEP (from reference design) */
+.laser-title {
+  position: relative;
+  display: inline-block;
+}
+.laser-title__text {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(90deg, var(--text-main) 0%, var(--text-main) 45%, var(--accent-gold) 50%, var(--text-main) 55%, var(--text-main) 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: laserSweep 4s ease-in-out infinite;
+}
+@keyframes laserSweep {
+  0% { background-position: 100% 0; }
+  50% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+.laser-title__beam {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+  animation: beamMove 3.5s ease-in-out infinite;
+  z-index: 3;
+}
+@keyframes beamMove {
+  0% { left: 0; width: 0; opacity: 0; }
+  20% { opacity: 1; }
+  50% { left: 0; width: 100%; }
+  80% { opacity: 1; }
+  100% { left: 100%; width: 0; opacity: 0; }
+}
+.laser-title__dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--accent-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px rgba(184,146,75,.5);
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+  animation: dotPulse 3.5s ease-in-out infinite;
+  z-index: 4;
+}
+@keyframes dotPulse {
+  0%, 100% { left: -16px; opacity: 0; }
+  10% { opacity: 1; }
+  50% { left: 100%; opacity: 1; }
+  90% { opacity: 0; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CDC2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8ADA0;
+}

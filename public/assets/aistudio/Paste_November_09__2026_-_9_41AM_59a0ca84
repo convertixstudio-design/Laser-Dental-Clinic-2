@@ -1,0 +1,476 @@
+/* ══════════════════════════════════════════════════════════
+   TRADUÇÕES — PT (default) / EN / BG
+══════════════════════════════════════════════════════════ */
+const T = {
+pt:{
+"demo.banner":"Site demonstrativo — desenvolvido por Convertix Studio. As imagens são meramente ilustrativas.",
+"nav.scientific":"Conceito científico e prático",
+"nav.journey":"Jornada do paciente",
+"nav.clinical":"Disciplinas clínicas",
+"nav.levels":"Quatro níveis de tratamento",
+"nav.tech":"Tecnologias inovadoras",
+"nav.care":"Cuidados a longo prazo",
+"nav.research":"Centro de conhecimento e investigação",
+"nav.pricing":"Preços e financiamento",
+"nav.about":"Sobre nós",
+"nav.contact":"Contacto",
+"hero.eyebrow":"Conceito científico e prático",
+"hero.title":"Saúde sustentável é harmonia, equilíbrio e sincronicidade",
+"hero.subtitle":"Conceito científico e prático para o tratamento",
+"hero.cta1":"Marcar consulta",
+"hero.cta2":"Conhecer o método",
+"home.longIntro1":"Na Laser Dental Clinic acreditamos que um sorriso saudável vai muito além da estética. É o resultado de um equilíbrio profundo entre a biologia oral, a função mastigatória, a postura e o bem-estar geral. O nosso conceito científico e prático assenta numa abordagem integrada que identifica a causa raiz dos problemas, estabiliza biologicamente os tecidos e restaura a função de forma duradoura.",
+"home.longIntro2":"Utilizamos diagnóstico funcional e 3D, tecnologia laser de última geração e protocolos regenerativos para criar as condições ideais para que o corpo se cure a si próprio. Cada plano de tratamento é individualizado, desenhado à medida das necessidades e objetivos de cada paciente.",
+"home.aboutEyebrow":"Sobre a clínica",
+"home.aboutTitle":"Uma abordagem integrada à medicina dentária moderna",
+"home.aboutP1":"A Laser Dental Clinic é um centro de medicina dentária avançada que combina ciência, tecnologia e humanismo. A nossa equipa multidisciplinar trabalha em conjunto para oferecer um diagnóstico profundo e um tratamento verdadeiramente individualizado.",
+"home.aboutP2":"Acreditamos que cada sintoma é um sinal de um desequilíbrio mais profundo. Por isso, dedicamos tempo a ouvir, a investigar e a compreender a causa raiz antes de propor qualquer tratamento.",
+"home.aboutP3":"O nosso protocolo MFSP™ (Medical Functional Stability Protocol) guia todo o processo, desde a primeira consulta até ao acompanhamento a longo prazo.",
+"pillars.eyebrow":"O método",
+"pillars.title":"Três pilares para uma saúde sustentável",
+"home.pillarsLead":"Cada pilar representa uma etapa fundamental do nosso protocolo, desenhada para restaurar o equilíbrio e a função de forma duradoura.",
+"pillars.mfsp.title":"MFSP™","pillars.mfsp.desc":"Descobrimos a causa raiz",
+"home.mfspLong":"O MFSP™ é o nosso protocolo de diagnóstico avançado. Começamos por ouvir atentamente a história médica e dentária do paciente, seguida de uma análise funcional e oclusal completa. Utilizamos imagiologia 3D e ferramentas digitais para avaliar a oclusão, a ATM, a postura e o equilíbrio neuromuscular. O resultado é um plano de tratamento individualizado que aborda a verdadeira origem do problema.",
+"pillars.mfsp.i1":"Anamnese médica e dentária detalhada","pillars.mfsp.i2":"Diagnóstico funcional e oclusal","pillars.mfsp.i3":"Imagiologia 3D e digital","pillars.mfsp.i4":"Análise da oclusão e ATM","pillars.mfsp.i5":"Análise postural e neuromuscular","pillars.mfsp.i6":"Plano de tratamento individual",
+"pillars.initial.title":"Initial Therapy","pillars.initial.desc":"Estabilização biológica",
+"home.initialLong":"A Initial Therapy é a fase de estabilização biológica. Controlamos a infeção e a inflamação, tratamos a doença periodontal e aplicamos bioestimulação laser para acelerar a regeneração dos tecidos. O objetivo é criar um ambiente oral harmonioso e saudável, preparando o terreno para a restauração funcional.",
+"pillars.initial.i1":"Controlo de infeção e inflamação","pillars.initial.i2":"Terapia periodontal","pillars.initial.i3":"Bioestimulação laser","pillars.initial.i4":"Regeneração dos tecidos","pillars.initial.i5":"Harmonização do ambiente oral","pillars.initial.i6":"Preparação para restauração funcional",
+"pillars.bosync.title":"BOSYNC™","pillars.bosync.desc":"Restauramos a função",
+"home.bosyncLong":"O BOSYNC™ é a fase de restauração funcional. Otimizamos a oclusão, restabelecemos o equilíbrio neuromuscular e integramos próteses e ortodontia de forma harmoniosa. O controlo postural e o acompanhamento contínuo garantem estabilidade a longo prazo e um sorriso funcional e estético.",
+"pillars.bosync.i1":"Otimização oclusal","pillars.bosync.i2":"Equilíbrio neuromuscular","pillars.bosync.i3":"Integração protética e ortodôntica","pillars.bosync.i4":"Controlo postural e equilíbrio","pillars.bosync.i5":"Estabilidade e acompanhamento",
+"journey.resEyebrow":"Resultados",
+"journey.resTitle":"Harmonia, equilíbrio funcional e sincronicidade",
+"home.resultsLead":"O resultado da jornada do paciente é uma saúde sustentável, onde a função, a estética e o bem-estar coexistem em perfeita harmonia.",
+"journey.res1t":"Harmonia","journey.res1d":"Função, estética, conforto e qualidade de vida.",
+"journey.res2t":"Equilíbrio Funcional","journey.res2d":"Equilíbrio entre a função oral, a postura e a saúde global.",
+"journey.res3t":"Sincronicidade","journey.res3d":"Trabalho harmonioso de todos os sistemas funcionais.",
+"journey.res4t":"Saúde Sustentável","journey.res4d":"Harmonia, equilíbrio e sincronicidade — de forma duradoura.",
+"tech.eyebrow":"Tecnologias",
+"tech.title":"Tecnologias inovadoras ao serviço da saúde",
+"home.techLead":"Investimos nas tecnologias mais avançadas para oferecer diagnósticos precisos, tratamentos minimamente invasivos e resultados duradouros.",
+"home.cbctLong":"A tomografia computorizada de feixe cónico (CBCT) permite obter imagens 3D de alta resolução com uma dose de radiação significativamente inferior à dos exames tradicionais. É essencial para o planeamento de implantes, endodontia e cirurgia.",
+"home.waterlaseLong":"O laser de água é uma tecnologia minimamente invasiva que permite tratar tecidos duros e moles com precisão, reduzindo o desconforto, o sangramento e o tempo de recuperação.",
+"home.diagnocamLong":"O Diagnocam utiliza fluorescência laser para detetar cáries em estágios iniciais, sem radiação ionizante, permitindo intervenções preventivas e preservação máxima do tecido dentário.",
+"home.scannerLong":"Substitui as moldagens tradicionais por impressões digitais precisas e confortáveis, agilizando o planeamento e a comunicação com o laboratório.",
+"home.ctaTitle":"Pronto para transformar o seu sorriso?",
+"home.ctaText":"Marque uma consulta de avaliação e descubra como o nosso protocolo pode ajudar a restaurar a sua saúde oral de forma sustentável.",
+"home.ctaButton":"Marcar consulta",
+"journey.eyebrow":"Jornada do paciente","journey.title":"Uma jornada rumo à saúde sustentável","journey.lead":"Sete etapas desde o sintoma até ao acompanhamento a longo prazo.",
+"journey.s1t":"Sintoma","journey.s1d":"Quando o sintoma é um sinal, procuramos a causa.","journey.s2t":"Diagnóstico MFSP™","journey.s2d":"Diagnóstico e análise abrangentes.","journey.s3t":"Plano Individual","journey.s3d":"Plano personalizado, adaptado às suas necessidades e prognóstico.","journey.s4t":"Terapia Inicial","journey.s4d":"Controlo de infeção e inflamação. Estabilização biológica.","journey.s5t":"BOSYNC™","journey.s5d":"Restauração biológica, oclusal e estrutural.","journey.s6t":"Avaliação Final","journey.s6d":"Avaliação dos resultados e da estabilidade.","journey.s7t":"Programa de Suporte","journey.s7d":"Consultas regulares, profilaxia e acompanhamento a longo prazo.",
+"dir.eyebrow":"Especialidades","dir.title":"Áreas clínicas","dir.lead":"Especialidades unidas por uma única conceção funcional de diagnóstico, tratamento e acompanhamento.",
+"dir.perio.t":"Periodontologia","dir.perio.d":"Tratamento especializado das gengivas e estruturas de suporte. Controlamos a inflamação, tratamos a periodontite e criamos as condições biológicas necessárias para uma saúde oral estável a longo prazo.",
+"dir.caries.t":"Cariologia & Restauradora","dir.caries.d":"Abordagem minimamente invasiva da cárie dentária. Preservamos o máximo de tecido saudável e restauramos o dente com materiais biocompatíveis.",
+"dir.endo.t":"Endodontia","dir.endo.d":"Tratamento de canais radiculares com tecnologia moderna e microscopia. Eliminamos a infeção e preservamos o dente natural.",
+"dir.ortho.t":"Ortodontia","dir.ortho.d":"Correção do alinhamento dentário e da oclusão com aparelhos fixos ou alinhadores transparentes.",
+"dir.funcOrtho.t":"Ortodontia Funcional — Ortho‑T Center","dir.funcOrtho.d":"Diagnóstico funcional avançado, acompanhamento do crescimento, equilíbrio músculo-oclusal e tratamento individualizado.",
+"dir.prostho.t":"Prótese & Reabilitação Funcional","dir.prostho.d":"Reabilitação oral completa com coroas, pontes e próteses. Restauramos estética, função mastigatória, dimensão vertical e estabilidade oclusal.",
+"dir.surgery.t":"Cirurgia & Implantologia","dir.surgery.d":"Preservação de tecidos, regeneração óssea e implantes dentários, com técnicas minimamente invasivas e previsibilidade.",
+"dir.sports.t":"Medicina Dentária Desportiva & Trauma","dir.sports.d":"Prevenção e tratamento de traumatismos dentários em atletas. Proteções personalizadas e reabilitação funcional.",
+"dir.pedo.t":"Pediatria & Desenvolvimento Funcional","dir.pedo.d":"Acompanhamento do crescimento e desenvolvimento oral da criança. Quatro níveis de tratamento individual: Basic, Functional, Premium, Complex.",
+"lvl.eyebrow":"Níveis de tratamento","lvl.title":"Quatro níveis de tratamento individual","lvl.lead":"Cada paciente recebe um plano personalizado, dimensionado à complexidade do seu caso e aos seus objetivos de saúde.",
+"lvl.basic.d":"Consultas essenciais, diagnóstico inicial e controlo preventivo.","lvl.basic.f1":"Avaliação clínica completa","lvl.basic.f2":"Diagnóstico inicial","lvl.basic.f3":"Plano preventivo","lvl.basic.f4":"Acompanhamento básico",
+"lvl.func.d":"Diagnóstico funcional e estabilização biológica.","lvl.func.f1":"Diagnóstico funcional 3D","lvl.func.f2":"Análise oclusal e postural","lvl.func.f3":"Estabilização biológica","lvl.func.f4":"Plano funcional integrado",
+"lvl.prem.d":"Reabilitação funcional e estética alargada.","lvl.prem.f1":"Reabilitação funcional completa","lvl.prem.f2":"Otimização oclusal","lvl.prem.f3":"Estética dentária avançada","lvl.prem.f4":"Tecnologias personalizadas",
+"lvl.cplx.d":"Casos complexos com reabilitação completa e multidisciplinar.","lvl.cplx.f1":"Abordagem multidisciplinar","lvl.cplx.f2":"Cirurgia e regeneração","lvl.cplx.f3":"Reabilitação total da função","lvl.cplx.f4":"Acompanhamento dedicado",
+"tech.diag.title":"Diagnóstico de alta tecnologia","tech.diag.cbct":"Diagnóstico 3D de alta resolução com baixa dose de radiação.","tech.diag.dcam":"Deteção precoce de cáries sem radiação ionizante.","tech.diag.scan":"Impressões digitais para planeamento preciso.",
+"tech.bio.title":"Tecnologias biológicas e regenerativas","tech.bio.wl":"Tecnologia laser para trabalho minimamente invasivo.","tech.bio.surg":"Incisões precisas, controlo de hemorragia.","tech.bio.pbm":"Terapia de luz não invasiva para cicatrização.",
+"tech.func.title":"Tecnologias funcionais","tech.func.tao":"Tecnologia fotónica vestível para equilíbrio postural.","tech.func.ocl":"Análise computorizada dos contactos oclusais.","tech.func.neu":"Avaliação do equilíbrio neuromuscular.",
+"tech.pers.title":"Medicina personalizada","tech.pers.dna.t":"Testes de ADN","tech.pers.dna.d":"Avaliação de predisposições genéticas.","tech.pers.mic.t":"Análises Microbiológicas","tech.pers.mic.d":"Avaliação da flora oral e patogénicos.","tech.pers.sal.t":"Análise da Saliva","tech.pers.sal.d":"Fluxo salivar, pH, capacidade tampão.",
+"care.eyebrow":"Cuidados a longo prazo","care.title":"Programas de suporte a longo prazo","care.lead":"A saúde sustentável exige acompanhamento contínuo. Os nossos programas garantem estabilidade, prevenção e longevidade dos resultados.",
+"care.elite.d":"Profilaxia e controlo, cuidado profissional para a sua saúde.","care.elite.f1":"Consultas de controlo regulares","care.elite.f2":"Profilaxia profissional","care.elite.f3":"Acompanhamento personalizado","care.elite.f4":"Prioridade de agendamento",
+"care.prem.d":"Cuidados alargados, profilaxia personalizada e controlo.","care.prem.f1":"Tudo do programa Elite","care.prem.f2":"Profilaxia personalizada","care.prem.f3":"Análises periódicas","care.prem.f4":"Acesso a tecnologia avançada",
+"care.gold.d":"Cuidado máximo, plano individual e atendimento prioritário.","care.gold.f1":"Tudo do programa Premium","care.gold.f2":"Plano individual dedicado","care.gold.f3":"Atendimento prioritário","care.gold.f4":"Coordenação multidisciplinar",
+"res.eyebrow":"Conhecimento & Investigação","res.title":"Centro de conhecimento e investigação","res.lead":"Partilhamos ciência porque acreditamos que o conhecimento é o primeiro passo para uma saúde sustentável.",
+"res.a1t":"Função, oclusão e postura","res.a1d":"Uma visão abrangente das inter-relações entre oclusão, função mastigatória e equilíbrio postural.",
+"res.a2t":"Do sintoma à causa raiz","res.a2d":"Como a diagnóstica integrada revela a causa profunda e permite tratamentos verdadeiramente individualizados.",
+"res.a3t":"Laser e regeneração","res.a3d":"O papel das tecnologias laser e dos protocolos regenerativos na preservação de tecidos e na longevidade dos resultados.",
+"pri.eyebrow":"Preços & financiamento","pri.title":"Transparência em cada etapa","pri.lead":"Soluções flexíveis, pensadas para diferentes necessidades e fases de tratamento.",
+"pri.fin":"Financiamento disponível em prestações flexíveis, adaptadas ao seu plano de tratamento.","pri.note":"Os valores apresentados são demonstrativos. Será apresentado um orçamento detalhado após a consulta de avaliação.","pri.cta":"Pedir orçamento →",
+"ab.eyebrow":"Sobre nós","ab.title":"Uma abordagem integrada à medicina dentária moderna","ab.lead":"Na Laser Dental Clinic combinamos diagnóstico funcional, tecnologia avançada e um plano individual para descobrir a causa profunda — não apenas o sintoma.",
+"ab.missT":"Missão","ab.miss":"Devolver às pessoas uma saúde oral sustentável, através de um diagnóstico profundo, tecnologia avançada e um plano verdadeiramente individualizado.",
+"ab.visT":"Visão","ab.vis":"Ser a referência em medicina dentária funcional, integrando ciência, tecnologia e humanismo em cada tratamento.",
+"ab.valT":"Valores","ab.val":"Rigor científico · Humanismo · Transparência · Inovação · Sustentabilidade clínica",
+"ab.s1":"anos de experiência clínica","ab.s2":"pacientes acompanhados","ab.s3":"áreas clínicas integradas","ab.s4":"compromisso com a excelência",
+"ct.eyebrow":"Contacto","ct.title":"Marque uma consulta","ct.lead":"Estamos disponíveis para o acompanhar num plano individualizado e sustentável.",
+"ct.mapT":"Localização","ct.addrL":"Endereço","ct.phoneL":"Telefone","ct.emailL":"Email","ct.schedL":"Horário","ct.sched":"Apenas com marcação prévia.",
+"ct.schedNote":"As consultas são realizadas apenas com marcação prévia. Pode marcar através do formulário, WhatsApp ou Viber.",
+"ct.formT":"Pedido de marcação","ct.name":"Nome","ct.email":"Email","ct.phone":"Telefone","ct.msg":"Mensagem","ct.submit":"Enviar pedido",
+"ct.formNote":"Formulário demonstrativo — nenhum dado é enviado neste projeto da Convertix Studio.",
+"ct.socialT":"Siga-nos e contacte-nos",
+"md.title":"Obrigado!","md.desc":"O seu pedido foi enviado. Entraremos em contacto brevemente.","md.note":"Demonstração — nenhum dado foi realmente enviado.",
+"lg.terms":"Termos","lg.privacy":"Privacidade","lg.cookies":"Cookies demonstrativos",
+"lg.termsT":"Termos e Condições","lg.termsP1":"Este site é uma demonstração desenvolvida pela Convertix Studio. Todo o conteúdo é meramente ilustrativo e não constitui aconselhamento médico ou dentário.","lg.termsP2":"O uso deste site é da responsabilidade do utilizador. A Convertix Studio não se responsabiliza por quaisquer decisões tomadas com base nas informações apresentadas.",
+"lg.privT":"Política de Privacidade","lg.privP1":"Esta é uma demonstração da Convertix Studio. Nenhum dado pessoal é recolhido, armazenado ou processado através deste site.","lg.privP2":"O formulário de contacto é fictício e não envia informações para nenhum servidor. Se este site fosse implementado na sua versão final, seria acompanhado de uma política de privacidade completa em conformidade com o RGPD.",
+"lg.cookT":"Política de Cookies","lg.cookP1":"Este site demonstrativo não utiliza cookies de rastreamento ou publicidade. Apenas podem ser utilizados cookies técnicos essenciais para o funcionamento da demonstração.","lg.cookP2":"Para a versão final, será implementado um sistema de gestão de consentimento de cookies de acordo com a legislação aplicável.",
+"ft.demo":"Site demonstrativo desenvolvido por Convertix Studio. Conteúdo e imagens meramente ilustrativos.","ft.rights":"Todos os direitos reservados.",
+"common.demoImage":"Imagem demonstrativa","common.demoMap":"Mapa demonstrativo"
+},
+en:{
+"demo.banner":"Demo website — developed by Convertix Studio. All images are for illustration purposes only.",
+"nav.scientific":"Scientific & practical concept","nav.journey":"Patient journey","nav.clinical":"Clinical Disciplines","nav.levels":"Four Levels of Treatment","nav.tech":"Innovative Technologies","nav.care":"Long-term care","nav.research":"Knowledge & Research Center","nav.pricing":"Pricing & Financing","nav.about":"About Us","nav.contact":"Contact",
+"hero.eyebrow":"Scientific & practical concept","hero.title":"Sustainable health is harmony, balance and synchronicity","hero.subtitle":"Scientific and practical concept for treatment","hero.cta1":"Book a consultation","hero.cta2":"Discover the method",
+"home.longIntro1":"At Laser Dental Clinic we believe that a healthy smile goes far beyond aesthetics. It is the result of a deep balance between oral biology, masticatory function, posture and overall well-being. Our scientific and practical concept is based on an integrated approach that identifies the root cause of problems, biologically stabilises tissues and restores function in a lasting way.",
+"home.longIntro2":"We use functional and 3D diagnostics, state-of-the-art laser technology and regenerative protocols to create the ideal conditions for the body to heal itself. Each treatment plan is individualised, designed to meet the specific needs and goals of each patient.",
+"home.aboutEyebrow":"About the clinic","home.aboutTitle":"An integrated approach to modern dentistry",
+"home.aboutP1":"Laser Dental Clinic is an advanced dental medicine centre that combines science, technology and humanism. Our multidisciplinary team works together to offer deep diagnosis and truly individualised treatment.",
+"home.aboutP2":"We believe that every symptom is a sign of a deeper imbalance. That is why we dedicate time to listen, investigate and understand the root cause before proposing any treatment.",
+"home.aboutP3":"Our MFSP™ protocol (Medical Functional Stability Protocol) guides the entire process, from the first consultation to long-term follow-up.",
+"pillars.eyebrow":"The method","pillars.title":"Three pillars for sustainable health",
+"home.pillarsLead":"Each pillar represents a fundamental stage of our protocol, designed to restore balance and function in a lasting way.",
+"pillars.mfsp.title":"MFSP™","pillars.mfsp.desc":"We discover the root cause",
+"home.mfspLong":"MFSP™ is our advanced diagnostic protocol. We start by carefully listening to the patient's medical and dental history, followed by a complete functional and occlusal analysis. We use 3D imaging and digital tools to assess occlusion, TMJ, posture and neuromuscular balance. The result is an individualised treatment plan that addresses the true origin of the problem.",
+"pillars.mfsp.i1":"Detailed medical and dental history","pillars.mfsp.i2":"Functional and occlusal diagnostics","pillars.mfsp.i3":"3D imaging and digital diagnostics","pillars.mfsp.i4":"Occlusion and TMJ analysis","pillars.mfsp.i5":"Postural and neuromuscular analysis","pillars.mfsp.i6":"Individual treatment plan",
+"pillars.initial.title":"Initial Therapy","pillars.initial.desc":"Biological stabilisation",
+"home.initialLong":"Initial Therapy is the biological stabilisation phase. We control infection and inflammation, treat periodontal disease and apply laser biostimulation to accelerate tissue regeneration. The goal is to create a harmonious and healthy oral environment, preparing the ground for functional restoration.",
+"pillars.initial.i1":"Infection and inflammation control","pillars.initial.i2":"Periodontal therapy","pillars.initial.i3":"Laser biostimulation","pillars.initial.i4":"Tissue regeneration","pillars.initial.i5":"Harmonisation of the oral environment","pillars.initial.i6":"Preparation for functional restoration",
+"pillars.bosync.title":"BOSYNC™","pillars.bosync.desc":"We restore function",
+"home.bosyncLong":"BOSYNC™ is the functional restoration phase. We optimise occlusion, re-establish neuromuscular balance and integrate prosthetics and orthodontics harmoniously. Postural control and continuous follow-up ensure long-term stability and a functional and aesthetic smile.",
+"pillars.bosync.i1":"Occlusal optimisation","pillars.bosync.i2":"Neuromuscular balance","pillars.bosync.i3":"Prosthetic and orthodontic integration","pillars.bosync.i4":"Postural control and balance","pillars.bosync.i5":"Long-term stability and follow-up",
+"journey.resEyebrow":"Results","journey.resTitle":"Harmony, functional balance and synchronicity",
+"home.resultsLead":"The result of the patient journey is sustainable health, where function, aesthetics and well-being coexist in perfect harmony.",
+"journey.res1t":"Harmony","journey.res1d":"Function, aesthetics, comfort and quality of life.",
+"journey.res2t":"Functional Balance","journey.res2d":"Balance between oral function, posture and overall health.",
+"journey.res3t":"Synchronicity","journey.res3d":"Harmonious work of all functional systems.",
+"journey.res4t":"Sustainable Health","journey.res4d":"Harmony, balance and synchronicity — sustainably.",
+"tech.eyebrow":"Technologies","tech.title":"Innovative technologies at the service of health","home.techLead":"We invest in the most advanced technologies to offer precise diagnoses, minimally invasive treatments and lasting results.",
+"home.cbctLong":"Cone beam computed tomography (CBCT) provides high-resolution 3D images with a significantly lower radiation dose than traditional exams. It is essential for implant planning, endodontics and surgery.",
+"home.waterlaseLong":"Water laser is a minimally invasive technology that allows treating hard and soft tissues with precision, reducing discomfort, bleeding and recovery time.",
+"home.diagnocamLong":"Diagnocam uses laser fluorescence to detect caries in their early stages, without ionising radiation, enabling preventive interventions and maximum preservation of dental tissue.",
+"home.scannerLong":"It replaces traditional impressions with precise and comfortable digital impressions, streamlining planning and communication with the laboratory.",
+"home.ctaTitle":"Ready to transform your smile?","home.ctaText":"Book an assessment consultation and discover how our protocol can help restore your oral health sustainably.","home.ctaButton":"Book a consultation",
+"journey.eyebrow":"Patient journey","journey.title":"A journey towards sustainable health","journey.lead":"Seven steps from symptom to long-term follow-up.",
+"journey.s1t":"Symptom","journey.s1d":"When the symptom is a signal, we look for the cause.","journey.s2t":"MFSP™ Diagnostics","journey.s2d":"Comprehensive diagnostics and analysis.","journey.s3t":"Individual Plan","journey.s3d":"Personalised plan tailored to your needs and long-term prognosis.","journey.s4t":"Initial Therapy","journey.s4d":"Infection and inflammation control. Biological stabilisation.","journey.s5t":"BOSYNC™","journey.s5d":"Biological, occlusal and structural restoration.","journey.s6t":"Final Assessment","journey.s6d":"Evaluation of results and long-term stability.","journey.s7t":"Support Programme","journey.s7d":"Regular check-ups, prophylaxis and long-term follow-up.",
+"dir.eyebrow":"Clinical Disciplines","dir.title":"Clinical areas","dir.lead":"Specialties united by a single functional concept of diagnosis, treatment and follow-up.",
+"dir.perio.t":"Periodontology","dir.perio.d":"Specialised treatment of the gums and tooth-supporting structures. We control inflammation, treat periodontitis and create the biological conditions for stable long-term oral health.",
+"dir.caries.t":"Cariology & Restorative Dentistry","dir.caries.d":"Minimally invasive approach to dental caries. We preserve as much healthy tissue as possible and restore the tooth with biocompatible materials.",
+"dir.endo.t":"Endodontics","dir.endo.d":"Root canal treatment with modern technology and microscopy. We eliminate infection and preserve the natural tooth.",
+"dir.ortho.t":"Orthodontics","dir.ortho.d":"Correction of dental alignment and occlusion with fixed appliances or clear aligners.",
+"dir.funcOrtho.t":"Functional Orthodontics — Ortho‑T Center","dir.funcOrtho.d":"Advanced functional diagnosis, growth monitoring, muscle-occlusal balance and individualised treatment.",
+"dir.prostho.t":"Prosthodontics & Functional Rehabilitation","dir.prostho.d":"Complete oral rehabilitation with crowns, bridges and prostheses. We restore aesthetics, masticatory function, vertical dimension and occlusal stability.",
+"dir.surgery.t":"Surgery & Implantology","dir.surgery.d":"Tissue preservation, bone regeneration and dental implants, with minimally invasive techniques and predictability.",
+"dir.sports.t":"Sports Dentistry & Trauma","dir.sports.d":"Prevention and treatment of dental trauma in athletes. Custom-made protection and functional rehabilitation.",
+"dir.pedo.t":"Paediatric Dentistry & Functional Development","dir.pedo.d":"Monitoring the child's oral growth and development. Four levels of individual treatment: Basic, Functional, Premium, Complex.",
+"lvl.eyebrow":"Treatment Levels","lvl.title":"Four levels of individual treatment","lvl.lead":"Each patient receives a personalised plan, dimensioned to the complexity of their case and their health goals.",
+"lvl.basic.d":"Essential consultations, initial diagnosis and preventive monitoring.","lvl.basic.f1":"Full clinical assessment","lvl.basic.f2":"Initial diagnosis","lvl.basic.f3":"Preventive plan","lvl.basic.f4":"Basic follow-up",
+"lvl.func.d":"Functional diagnosis and biological stabilisation.","lvl.func.f1":"Functional 3D diagnosis","lvl.func.f2":"Occlusal and postural analysis","lvl.func.f3":"Biological stabilisation","lvl.func.f4":"Integrated functional plan",
+"lvl.prem.d":"Extended functional and aesthetic rehabilitation.","lvl.prem.f1":"Full functional rehabilitation","lvl.prem.f2":"Occlusal optimisation","lvl.prem.f3":"Advanced dental aesthetics","lvl.prem.f4":"Personalised technologies",
+"lvl.cplx.d":"Complex cases with complete multidisciplinary rehabilitation.","lvl.cplx.f1":"Multidisciplinary approach","lvl.cplx.f2":"Surgery and regeneration","lvl.cplx.f3":"Total functional rehabilitation","lvl.cplx.f4":"Dedicated follow-up",
+"tech.diag.title":"High-tech diagnostics","tech.diag.cbct":"High-resolution 3D diagnostics with low radiation dose.","tech.diag.dcam":"Early caries detection without ionising radiation.","tech.diag.scan":"Digital impressions for precise planning.",
+"tech.bio.title":"Biological & regenerative technologies","tech.bio.wl":"Laser technology for minimally invasive work.","tech.bio.surg":"Precise incisions, bleeding control.","tech.bio.pbm":"Non-invasive light therapy to support healing.",
+"tech.func.title":"Functional technologies","tech.func.tao":"Wearable photonic technology for postural balance.","tech.func.ocl":"Computerised analysis of occlusal contacts.","tech.func.neu":"Assessment of neuromuscular balance.",
+"tech.pers.title":"Personalised medicine","tech.pers.dna.t":"DNA Tests","tech.pers.dna.d":"Assessment of genetic predispositions.","tech.pers.mic.t":"Microbiological Testing","tech.pers.mic.d":"Assessment of oral flora and pathogens.","tech.pers.sal.t":"Saliva Analysis","tech.pers.sal.d":"Salivary flow, pH, buffer capacity.",
+"care.eyebrow":"Long-term care","care.title":"Long-term support programmes","care.lead":"Sustainable health requires continuous follow-up. Our programmes ensure stability, prevention and long-term results.",
+"care.elite.d":"Prophylaxis and control, professional care for your health.","care.elite.f1":"Regular check-up visits","care.elite.f2":"Professional prophylaxis","care.elite.f3":"Personalised follow-up","care.elite.f4":"Priority scheduling",
+"care.prem.d":"Extended care, personalised prophylaxis and control.","care.prem.f1":"Everything in Elite","care.prem.f2":"Personalised prophylaxis","care.prem.f3":"Periodic analyses","care.prem.f4":"Access to advanced technology",
+"care.gold.d":"Maximum care, individual plan and priority service.","care.gold.f1":"Everything in Premium","care.gold.f2":"Dedicated individual plan","care.gold.f3":"Priority service","care.gold.f4":"Multidisciplinary coordination",
+"res.eyebrow":"Knowledge & Research","res.title":"Knowledge and research center","res.lead":"We share science because we believe knowledge is the first step towards sustainable health.",
+"res.a1t":"Function, occlusion and posture","res.a1d":"A comprehensive look at occlusion, masticatory function and postural balance.",
+"res.a2t":"From symptom to root cause","res.a2d":"How integrated diagnostics reveal the deeper cause and enable truly individualised treatment planning.",
+"res.a3t":"Laser and regeneration","res.a3d":"The role of laser technologies and regenerative protocols in tissue preservation and long-term clinical outcomes.",
+"pri.eyebrow":"Pricing & Financing","pri.title":"Transparency at every step","pri.lead":"Flexible solutions designed for different needs and treatment stages.",
+"pri.fin":"Financing available in flexible instalments, tailored to your treatment plan.","pri.note":"Prices shown are for demonstration. A detailed quote will be provided after the assessment consultation.","pri.cta":"Request a quote →",
+"ab.eyebrow":"About Us","ab.title":"An integrated approach to modern dentistry","ab.lead":"At Laser Dental Clinic we combine functional diagnosis, advanced technology and an individual plan to discover the deeper cause — not just the symptom.",
+"ab.missT":"Mission","ab.miss":"To give people back sustainable oral health through deep diagnosis, advanced technology and a truly individualised plan.",
+"ab.visT":"Vision","ab.vis":"To be the reference in functional dentistry, integrating science, technology and humanism into every treatment.",
+"ab.valT":"Values","ab.val":"Scientific rigour · Humanism · Transparency · Innovation · Clinical sustainability",
+"ab.s1":"years of clinical experience","ab.s2":"patients followed up","ab.s3":"integrated clinical areas","ab.s4":"commitment to excellence",
+"ct.eyebrow":"Contact","ct.title":"Book a consultation","ct.lead":"We are available to guide you through an individualised and sustainable plan.",
+"ct.mapT":"Location","ct.addrL":"Address","ct.phoneL":"Phone","ct.emailL":"Email","ct.schedL":"Hours","ct.sched":"By appointment only.",
+"ct.schedNote":"Consultations are by appointment only. You can book via the form, WhatsApp or Viber.",
+"ct.formT":"Appointment request","ct.name":"Name","ct.email":"Email","ct.phone":"Phone","ct.msg":"Message","ct.submit":"Send request",
+"ct.formNote":"Demo form — no data is sent in this Convertix Studio project.",
+"ct.socialT":"Follow us and get in touch",
+"md.title":"Thank you!","md.desc":"Your request has been sent. We will contact you shortly.","md.note":"Demo — no data has actually been sent.",
+"lg.terms":"Terms","lg.privacy":"Privacy","lg.cookies":"Cookies (demo)",
+"lg.termsT":"Terms & Conditions","lg.termsP1":"This website is a demo developed by Convertix Studio. All content is for illustration purposes only and does not constitute medical or dental advice.","lg.termsP2":"Use of this website is at the user's own risk. Convertix Studio is not responsible for any decisions made based on the information presented here.",
+"lg.privT":"Privacy Policy","lg.privP1":"This is a Convertix Studio demo. No personal data is collected, stored or processed through this website.","lg.privP2":"The contact form is fictional and does not send information to any server. If this website were implemented in its final version, it would be accompanied by a full privacy policy in compliance with the GDPR.",
+"lg.cookT":"Cookie Policy","lg.cookP1":"This demo website does not use tracking or advertising cookies. Only essential technical cookies may be used.","lg.cookP2":"For the final version, a cookie consent management system will be implemented in accordance with applicable legislation.",
+"ft.demo":"Demo website developed by Convertix Studio. Content and images are illustrative only.","ft.rights":"All rights reserved.",
+"common.demoImage":"Demo image","common.demoMap":"Demo map"
+},
+bg:{
+"demo.banner":"Демонстрационен сайт — разработен от Convertix Studio. Всички изображения са илюстративни.",
+"nav.scientific":"Научно-практическа концепция","nav.journey":"Пациентско пътешествие","nav.clinical":"Клинични направления","nav.levels":"Четири нива на лечение","nav.tech":"Иновативни технологии","nav.care":"Дългосрочни грижи","nav.research":"Център за знания и изследвания","nav.pricing":"Цени и финансиране","nav.about":"За нас","nav.contact":"Контакт",
+"hero.eyebrow":"Научно-практическа концепция","hero.title":"Устойчивото здраве е хармония, баланс и синхроничност","hero.subtitle":"Научно-практическа концепция за лечение","hero.cta1":"Запазете час","hero.cta2":"Научете метода",
+"home.longIntro1":"В Laser Dental Clinic вярваме, че здравата усмивка е много повече от естетика. Тя е резултат от дълбок баланс между оралната биология, дъвкателната функция, постурата и цялостното благосъстояние. Нашата научно-практическа концепция се основава на интегриран подход, който идентифицира първопричината на проблемите, биологично стабилизира тъканите и възстановява функцията трайно.",
+"home.longIntro2":"Използваме функционална и 3D диагностика, най-съвременни лазерни технологии и регенеративни протоколи, за да създадем идеалните условия тялото да се самовъзстанови. Всеки лечебен план е индивидуализиран и съобразен с конкретните нужди и цели на пациента.",
+"home.aboutEyebrow":"За клиниката","home.aboutTitle":"Интегриран подход към съвременната дентална медицина",
+"home.aboutP1":"Laser Dental Clinic е център за напреднала дентална медицина, който съчетава наука, технологии и хуманизъм. Нашият мултидисциплинарен екип работи заедно, за да предложи задълбочена диагностика и истински индивидуализирано лечение.",
+"home.aboutP2":"Вярваме, че всеки симптом е сигнал за по-дълбок дисбаланс. Затова отделяме време да изслушаме, да изследваме и да разберем първопричината, преди да предложим каквото и да е лечение.",
+"home.aboutP3":"Нашият протокол MFSP™ (Medical Functional Stability Protocol) ръководи целия процес – от първата консултация до дългосрочното проследяване.",
+"pillars.eyebrow":"Методът","pillars.title":"Три стълба за устойчиво здраве",
+"home.pillarsLead":"Всеки стълб представлява фундаментален етап от нашия протокол, създаден да възстанови баланса и функцията трайно.",
+"pillars.mfsp.title":"MFSP™","pillars.mfsp.desc":"Откриваме първопричината",
+"home.mfspLong":"MFSP™ е нашият усъвършенстван диагностичен протокол. Започваме с внимателно изслушване на медицинската и денталната история на пациента, последвано от пълен функционален и оклузален анализ. Използваме 3D образна диагностика и дигитални инструменти за оценка на оклузията, ТМС, постурата и невромускулния баланс. Резултатът е индивидуализиран лечебен план, който адресира истинския произход на проблема.",
+"pillars.mfsp.i1":"Подробна медицинска и дентална анамнеза","pillars.mfsp.i2":"Функционална и оклузална диагностика","pillars.mfsp.i3":"3D образна и дигитална диагностика","pillars.mfsp.i4":"Анализ на оклузията и ТМС","pillars.mfsp.i5":"Постурален и невромускулен анализ","pillars.mfsp.i6":"Индивидуален лечебен план",
+"pillars.initial.title":"Initial Therapy","pillars.initial.desc":"Биологична стабилизация",
+"home.initialLong":"Initial Therapy е фазата на биологична стабилизация. Контролираме инфекцията и възпалението, лекуваме пародонталната болест и прилагаме лазерна биостимулация за ускоряване на регенерацията на тъканите. Целта е да се създаде хармонична и здравословна орална среда, подготвяща основата за функционално възстановяване.",
+"pillars.initial.i1":"Контрол на инфекцията и възпалението","pillars.initial.i2":"Пародонтална терапия","pillars.initial.i3":"Лазерна биостимулация","pillars.initial.i4":"Регенерация на тъканите","pillars.initial.i5":"Хармонизиране на оралната среда","pillars.initial.i6":"Подготовка за функционално възстановяване",
+"pillars.bosync.title":"BOSYNC™","pillars.bosync.desc":"Възстановяваме функцията",
+"home.bosyncLong":"BOSYNC™ е фазата на функционално възстановяване. Оптимизираме оклузията, възстановяваме невромускулния баланс и интегрираме протетика и ортодонтия по хармоничен начин. Постуралният контрол и непрекъснатото проследяване гарантират дългосрочна стабилност и функционална и естетична усмивка.",
+"pillars.bosync.i1":"Оклузална оптимизация","pillars.bosync.i2":"Невромускулен баланс","pillars.bosync.i3":"Протетична и ортодонтска интеграция","pillars.bosync.i4":"Постурален контрол и баланс","pillars.bosync.i5":"Дългосрочна стабилност и проследяване",
+"journey.resEyebrow":"Резултати","journey.resTitle":"Хармония, функционален баланс и синхроничност",
+"home.resultsLead":"Резултатът от пациентското пътешествие е устойчиво здраве, при което функцията, естетиката и благосъстоянието съществуват в пълна хармония.",
+"journey.res1t":"Хармония","journey.res1d":"Функция, естетика, комфорт и качество на живот.",
+"journey.res2t":"Функционален баланс","journey.res2d":"Баланс между оралната функция, постурата и цялостното здраве.",
+"journey.res3t":"Синхроничност","journey.res3d":"Хармонична работа на всички функционални системи.",
+"journey.res4t":"Устойчиво здраве","journey.res4d":"Хармония, баланс и синхроничност — трайно.",
+"tech.eyebrow":"Технологии","tech.title":"Иновативни технологии в услуга на здравето","home.techLead":"Инвестираме в най-напредналите технологии, за да предложим прецизни диагнози, минимално инвазивни лечения и трайни резултати.",
+"home.cbctLong":"Компютърната томография с конусен лъч (CBCT) предоставя 3D изображения с висока резолюция при значително по-ниска доза лъчение от традиционните изследвания. Тя е от съществено значение за планиране на импланти, ендодонтия и хирургия.",
+"home.waterlaseLong":"Водният лазер е минимално инвазивна технология, която позволява прецизна обработка на твърди и меки тъкани, намалявайки дискомфорта, кървенето и времето за възстановяване.",
+"home.diagnocamLong":"Diagnocam използва лазерна флуоресценция за откриване на кариес в ранни стадии, без йонизиращо лъчение, което позволява превантивни интервенции и максимално запазване на зъбната тъкан.",
+"home.scannerLong":"Заменя традиционните отпечатъци с прецизни и удобни дигитални отпечатъци, ускорявайки планирането и комуникацията с лабораторията.",
+"home.ctaTitle":"Готови ли сте да трансформирате усмивката си?","home.ctaText":"Запазете консултация за оценка и открийте как нашият протокол може да помогне за устойчиво възстановяване на оралното здраве.","home.ctaButton":"Запазете час",
+"journey.eyebrow":"Пациентско пътешествие","journey.title":"Пътешествие към устойчиво здраве","journey.lead":"Седем стъпки от симптома до дългосрочното проследяване.",
+"journey.s1t":"Симптом","journey.s1d":"Когато симптомът е сигнал, търсим причината.","journey.s2t":"MFSP™ диагностика","journey.s2d":"Комплексна диагностика и анализ.","journey.s3t":"Индивидуален план","journey.s3d":"Персонализиран план, съобразен с Вашите нужди и прогноза.","journey.s4t":"Инициална терапия","journey.s4d":"Контрол на инфекцията и възпалението. Биологична стабилизация.","journey.s5t":"BOSYNC™","journey.s5d":"Биологично, оклузално и структурно възстановяване.","journey.s6t":"Финална оценка","journey.s6d":"Оценка на резултатите и стабилността.","journey.s7t":"Поддържаща програма","journey.s7d":"Редовен контрол, профилактика и дългосрочно проследяване.",
+"dir.eyebrow":"Клинични направления","dir.title":"Клинични области","dir.lead":"Специалности, обединени от единна функционална концепция за диагностика, лечение и проследяване.",
+"dir.perio.t":"Пародонтология","dir.perio.d":"Специализирано лечение на венците и структурите, поддържащи зъба. Контролираме възпалението и създаваме биологичните условия за стабилно орално здраве.",
+"dir.caries.t":"Кариесология и възстановително лечение","dir.caries.d":"Минимално инвазивен подход към зъбния кариес. Запазваме максимум здрава тъкан и възстановяваме зъба с биосъвместими материали.",
+"dir.endo.t":"Ендодонтия","dir.endo.d":"Лечение на коренови канали с модерна технология и микроскопия. Елиминираме инфекцията и запазваме естествения зъб.",
+"dir.ortho.t":"Ортодонтия","dir.ortho.d":"Корекция на зъбното подреждане и оклузията с фиксирани апарати или прозрачни алайнери.",
+"dir.funcOrtho.t":"Функционална ортодонтия — Ortho‑T Center","dir.funcOrtho.d":"Напреднала функционална диагностика, проследяване на растежа, мускулно-оклузален баланс и индивидуализирано лечение.",
+"dir.prostho.t":"Протетика и функционална рехабилитация","dir.prostho.d":"Пълна орална рехабилитация с корони, мостове и протези. Възстановяваме естетика, функция и оклузална стабилност.",
+"dir.surgery.t":"Хирургия и имплантология","dir.surgery.d":"Съхраняване на тъканите, костна регенерация и дентални импланти с минимално инвазивни техники.",
+"dir.sports.t":"Спортна дентална медицина и травми","dir.sports.d":"Превенция и лечение на дентални травми при спортисти. Индивидуални предпазни средства и рехабилитация.",
+"dir.pedo.t":"Детска дентална медицина и функционално развитие","dir.pedo.d":"Проследяване на растежа при децата. Четири нива на индивидуално лечение: Basic, Functional, Premium, Complex.",
+"lvl.eyebrow":"Нива на лечение","lvl.title":"Четири нива на индивидуално лечение","lvl.lead":"Всеки пациент получава персонализиран план, съобразен със сложността на случая и неговите здравни цели.",
+"lvl.basic.d":"Основни консултации, начална диагностика и превантивен контрол.","lvl.basic.f1":"Пълен клиничен преглед","lvl.basic.f2":"Начална диагностика","lvl.basic.f3":"Превантивен план","lvl.basic.f4":"Базово проследяване",
+"lvl.func.d":"Функционална диагностика и биологична стабилизация.","lvl.func.f1":"Функционална 3D диагностика","lvl.func.f2":"Оклузален и постурален анализ","lvl.func.f3":"Биологична стабилизация","lvl.func.f4":"Интегриран функционален план",
+"lvl.prem.d":"Разширена функционална и естетична рехабилитация.","lvl.prem.f1":"Пълна функционална рехабилитация","lvl.prem.f2":"Оклузална оптимизация","lvl.prem.f3":"Напреднала дентална естетика","lvl.prem.f4":"Персонализирани технологии",
+"lvl.cplx.d":"Сложни случаи с пълна мултидисциплинарна рехабилитация.","lvl.cplx.f1":"Мултидисциплинарен подход","lvl.cplx.f2":"Хирургия и регенерация","lvl.cplx.f3":"Пълно функционално възстановяване","lvl.cplx.f4":"Отдадено проследяване",
+"tech.diag.title":"Високотехнологична диагностика","tech.diag.cbct":"3D диагностика с висока резолюция и ниска доза лъчение.","tech.diag.dcam":"Ранна диагностика на кариес без йонизиращо лъчение.","tech.diag.scan":"Цифрови отпечатъци за прецизно планиране.",
+"tech.bio.title":"Биологични и регенеративни технологии","tech.bio.wl":"Лазерна технология за минимално инвазивна работа.","tech.bio.surg":"Прецизни разрези, контрол на кървенето.","tech.bio.pbm":"Неинвазивна светлинна терапия за възстановяване.",
+"tech.func.title":"Функционални технологии","tech.func.tao":"Носима фотонна технология за постурален баланс.","tech.func.ocl":"Компютърен анализ на оклузалните контакти.","tech.func.neu":"Оценка на невро-мускулния баланс.",
+"tech.pers.title":"Персонализирана медицина","tech.pers.dna.t":"ДНК тестове","tech.pers.dna.d":"Оценка на генетични предразположения.","tech.pers.mic.t":"Микробиологични изследвания","tech.pers.mic.d":"Оценка на оралната микрофлора.","tech.pers.sal.t":"Анализ на слюнката","tech.pers.sal.d":"Слюнчен поток, pH, буферен капацитет.",
+"care.eyebrow":"Дългосрочни грижи","care.title":"Дългосрочни поддържащи програми","care.lead":"Устойчивото здраве изисква непрекъснато проследяване. Нашите програми осигуряват стабилност и превенция.",
+"care.elite.d":"Профилактика и контрол, професионална грижа за здравето.","care.elite.f1":"Редовни контролни прегледи","care.elite.f2":"Професионална профилактика","care.elite.f3":"Персонализирано проследяване","care.elite.f4":"Приоритетно запазване на час",
+"care.prem.d":"Разширена грижа, персонализирана профилактика и контрол.","care.prem.f1":"Всичко от Elite","care.prem.f2":"Персонализирана профилактика","care.prem.f3":"Периодични анализи","care.prem.f4":"Достъп до напреднали технологии",
+"care.gold.d":"Максимална грижа, индивидуален план и приоритетно обслужване.","care.gold.f1":"Всичко от Premium","care.gold.f2":"Отдаден индивидуален план","care.gold.f3":"Приоритетно обслужване","care.gold.f4":"Мултидисциплинарна координация",
+"res.eyebrow":"Знания и изследвания","res.title":"Център за знания и изследвания","res.lead":"Споделяме наука, защото вярваме, че знанието е първата стъпка към устойчиво здраве.",
+"res.a1t":"Функция, оклузия и постура","res.a1d":"Комплексен поглед към оклузията, дъвкателната функция и постуралния баланс.",
+"res.a2t":"От симптома към първопричината","res.a2d":"Как интегрираната диагностика разкрива дълбоката причина и позволява индивидуализирано планиране.",
+"res.a3t":"Лазер и регенерация","res.a3d":"Ролята на лазерните технологии и регенеративните протоколи за запазване на тъканите и дълготрайни резултати.",
+"pri.eyebrow":"Цени и финансиране","pri.title":"Прозрачност на всяка стъпка","pri.lead":"Гъвкави решения, съобразени с различните нужди и етапи на лечение.",
+"pri.fin":"Налично финансиране на гъвкави вноски, съобразени с Вашия лечебен план.","pri.note":"Показаните цени са демонстративни. Подробна оферта ще бъде предоставена след консултацията за оценка.","pri.cta":"Поискайте оферта →",
+"ab.eyebrow":"За нас","ab.title":"Интегриран подход към съвременната дентална медицина","ab.lead":"В Laser Dental Clinic съчетаваме функционална диагностика, модерни технологии и индивидуален план, за да открием дълбоката причина.",
+"ab.missT":"Мисия","ab.miss":"Да върнем на хората устойчиво орално здраве чрез задълбочена диагностика, напреднали технологии и истински индивидуализиран план.",
+"ab.visT":"Визия","ab.vis":"Да бъдем референтен център във функционалната дентална медицина, интегрирайки наука, технологии и хуманизъм.",
+"ab.valT":"Ценности","ab.val":"Научна строгост · Хуманизъм · Прозрачност · Иновация · Клинична устойчивост",
+"ab.s1":"години клиничен опит","ab.s2":"проследени пациенти","ab.s3":"интегрирани клинични области","ab.s4":"ангажимент към съвършенство",
+"ct.eyebrow":"Контакт","ct.title":"Запазете час за консултация","ct.lead":"На разположение сме да Ви насочим към индивидуализиран и устойчив план.",
+"ct.mapT":"Локация","ct.addrL":"Адрес","ct.phoneL":"Телефон","ct.emailL":"Имейл","ct.schedL":"График","ct.sched":"Само с предварително запазен час.",
+"ct.schedNote":"Прегледите се извършват само с предварително запазен час. Може да запазите час чрез формата, WhatsApp или Viber.",
+"ct.formT":"Заявка за час","ct.name":"Име","ct.email":"Имейл","ct.phone":"Телефон","ct.msg":"Съобщение","ct.submit":"Изпратете заявка",
+"ct.formNote":"Демонстрационен формуляр — не се изпращат данни в този проект на Convertix Studio.",
+"ct.socialT":"Последвайте ни и се свържете с нас",
+"md.title":"Благодарим Ви!","md.desc":"Вашата заявка е изпратена. Ще се свържем с Вас скоро.","md.note":"Демонстрация — реално не са изпратени данни.",
+"lg.terms":"Условия","lg.privacy":"Поверителност","lg.cookies":"Бисквитки (демо)",
+"lg.termsT":"Условия и правила","lg.termsP1":"Този сайт е демонстрация, разработена от Convertix Studio. Цялото съдържание е само с илюстративна цел.","lg.termsP2":"Използването на този сайт е на отговорност на потребителя. Convertix Studio не носи отговорност за решения, взети въз основа на информацията тук.",
+"lg.privT":"Политика за поверителност","lg.privP1":"Това е демонстрация на Convertix Studio. Чрез този сайт не се събират лични данни.","lg.privP2":"Формулярът за контакт е фиктивен и не изпраща информация. В окончателната версия ще бъде добавена пълна политика за поверителност съгласно GDPR.",
+"lg.cookT":"Политика за бисквитки","lg.cookP1":"Този демонстрационен сайт не използва бисквитки за проследяване или реклама.","lg.cookP2":"За окончателната версия ще бъде внедрена система за управление на съгласието за бисквитки.",
+"ft.demo":"Демонстрационен сайт, разработен от Convertix Studio. Съдържанието и изображенията са илюстративни.","ft.rights":"Всички права запазени.",
+"common.demoImage":"Демо изображение","common.demoMap":"Демо карта"
+}
+};
+
+/* ══════════════════════════════════════════════════════════
+   ESTADO
+══════════════════════════════════════════════════════════ */
+let currentLang = localStorage.getItem('lang') || 'pt';
+if (!['pt','en','bg'].includes(currentLang)) currentLang = 'pt';
+
+/* ══════════════════════════════════════════════════════════
+   TRADUÇÃO
+══════════════════════════════════════════════════════════ */
+function applyLang(lang){
+  const dict = T[lang];
+  if (!dict) return;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const v = dict[el.dataset.i18n];
+    if (v) el.textContent = v;
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const v = dict[el.dataset.i18nPlaceholder];
+    if (v) el.placeholder = v;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  document.documentElement.lang = lang === 'pt' ? 'pt-PT' : lang;
+  localStorage.setItem('lang', lang);
+  currentLang = lang;
+}
+
+/* ══════════════════════════════════════════════════════════
+   SIDEBAR
+══════════════════════════════════════════════════════════ */
+function openSidebar(){
+  document.getElementById('sidebar').classList.add('open');
+  document.getElementById('sidebarOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeSidebar(){
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+/* ══════════════════════════════════════════════════════════
+   SPA ROUTER
+══════════════════════════════════════════════════════════ */
+function goTo(pageId, pushHash = true){
+  const target = document.getElementById('page-' + pageId);
+  if (!target) return;
+
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('page--active'));
+  target.classList.add('page--active');
+
+  const anims = target.querySelectorAll('[data-anim]');
+  anims.forEach((el, i) => {
+    el.style.animation = 'none';
+    void el.offsetWidth;
+    el.style.animation = '';
+    el.style.animationDelay = (0.05 + i * 0.07) + 's';
+  });
+
+  document.querySelectorAll('.sidebar__nav a').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === pageId);
+  });
+
+  if (pushHash) {
+    try { history.replaceState(null, '', '#' + pageId); }
+    catch(_) { location.hash = '#' + pageId; }
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (window.innerWidth <= 1024) closeSidebar();
+  applyLang(currentLang);
+}
+
+/* ══════════════════════════════════════════════════════════
+   PARALLAX NO SCROLL
+══════════════════════════════════════════════════════════ */
+function initParallax(){
+  const layers = document.querySelectorAll('.parallax-layer');
+  if (!layers.length) return;
+
+  let ticking = false;
+  function update(){
+    const scrolled = window.pageYOffset;
+    layers.forEach(layer => {
+      const speed = parseFloat(layer.dataset.speed) || 0.2;
+      layer.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+  update();
+}
+
+/* ══════════════════════════════════════════════════════════
+   STATS ANIMADAS
+══════════════════════════════════════════════════════════ */
+function animateCount(el, target){
+  const start = performance.now();
+  function tick(now){
+    const t = Math.min((now - start) / 1500, 1);
+    const ease = 1 - Math.pow(1 - t, 3);
+    el.textContent = Math.round(target * ease);
+    if (t < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+const statsObserver = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (en.isIntersecting) {
+      const el = en.target;
+      const target = parseInt(el.dataset.count, 10);
+      if (!isNaN(target)) animateCount(el, target);
+      statsObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.4 });
+
+/* ══════════════════════════════════════════════════════════
+   INICIALIZAÇÃO
+══════════════════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+
+  applyLang(currentLang);
+
+  window.addEventListener('load', () => {
+    setTimeout(() => document.getElementById('loader').classList.add('loader--hidden'), 1800);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.addEventListener('click', () => applyLang(b.dataset.lang));
+  });
+
+  document.getElementById('sidebarToggle').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  document.getElementById('sidebarClose').addEventListener('click', closeSidebar);
+  document.getElementById('sidebarOverlay').addEventListener('click', closeSidebar);
+
+  document.addEventListener('click', e => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    const id = link.getAttribute('href').replace('#','');
+    if (document.getElementById('page-' + id)) {
+      e.preventDefault();
+      goTo(id);
+    }
+  });
+
+  document.querySelectorAll('[data-modal]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const m = document.getElementById('modal-' + btn.dataset.modal);
+      if (m) m.classList.add('modal--visible');
+    });
+  });
+  document.querySelectorAll('.modal').forEach(m => {
+    const close = m.querySelector('.modal__close');
+    if (close) close.addEventListener('click', () => m.classList.remove('modal--visible'));
+    m.addEventListener('click', e => {
+      if (e.target === m) m.classList.remove('modal--visible');
+    });
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      closeSidebar();
+      document.querySelectorAll('.modal.modal--visible').forEach(m => m.classList.remove('modal--visible'));
+    }
+  });
+
+  const form = document.getElementById('bookingForm');
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('modal-booking').classList.add('modal--visible');
+      form.reset();
+    });
+  }
+
+  const initial = location.hash.replace('#','') || 'scientific';
+  goTo(initial, false);
+
+  window.addEventListener('hashchange', () => {
+    const id = location.hash.replace('#','') || 'scientific';
+    if (document.getElementById('page-' + id)) goTo(id, false);
+  });
+
+  const aboutPage = document.getElementById('page-about');
+  if (aboutPage) {
+    aboutPage.querySelectorAll('[data-count]').forEach(el => statsObserver.observe(el));
+  }
+
+  initParallax();
+});

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Laser Dental Clinic | Demo SPA</title>
+<meta name="description" content="Site demonstrativo da Laser Dental Clinic. Desenvolvido por Convertix Studio.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <span class="loader__logo">Laser Dental Clinic</span>
+    <div class="loader__bar"><div class="loader__progress"></div></div>
+    <span class="loader__credit">by Convertix Studio</span>
+  </div>
+</div>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  <span data-i18n="demo.banner">Site demonstrativo — desenvolvido por Convertix Studio. As imagens são meramente ilustrativas.</span>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header__inner">
+    <a href="#scientific" class="logo">
+      <svg viewBox="0 0 40 40" width="38" height="38" aria-hidden="true">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6d4aa3"/>
+            <stop offset="100%" stop-color="#2b1747"/>
+          </linearGradient>
+        </defs>
+        <circle cx="20" cy="20" r="19" fill="url(#logoGrad)" stroke="#c9a44a" stroke-width="1.5"/>
+        <path d="M13 26 L20 10 L27 26" fill="none" stroke="#e8d49a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="20" cy="20" r="3" fill="#c9a44a"/>
+      </svg>
+      <span>Laser Dental Clinic</span>
+    </a>
+    <div class="header__actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="bg">BG</button>
+      </div>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <button class="sidebar__close" id="sidebarClose" aria-label="Fechar">×</button>
+  <nav class="sidebar__nav">
+    <ul>
+      <li><a href="#scientific" class="active" data-page="scientific" data-i18n="nav.scientific">Conceito científico e prático</a></li>
+      <li><a href="#journey" data-page="journey" data-i18n="nav.journey">Jornada do paciente</a></li>
+      <li><a href="#clinical" data-page="clinical" data-i18n="nav.clinical">Disciplinas clínicas</a></li>
+      <li><a href="#levels" data-page="levels" data-i18n="nav.levels">Quatro níveis de tratamento</a></li>
+      <li><a href="#tech" data-page="tech" data-i18n="nav.tech">Tecnologias inovadoras</a></li>
+      <li><a href="#care" data-page="care" data-i18n="nav.care">Cuidados a longo prazo</a></li>
+      <li><a href="#research" data-page="research" data-i18n="nav.research">Centro de conhecimento e investigação</a></li>
+      <li><a href="#pricing" data-page="pricing" data-i18n="nav.pricing">Preços e financiamento</a></li>
+      <li><a href="#about" data-page="about" data-i18n="nav.about">Sobre nós</a></li>
+      <li><a href="#contact" data-page="contact" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="sidebar__legal">
+    <button class="link-legal" data-modal="terms" data-i18n="lg.terms">Termos</button>
+    <button class="link-legal" data-modal="privacy" data-i18n="lg.privacy">Privacidade</button>
+    <button class="link-legal" data-modal="cookies" data-i18n="lg.cookies">Cookies demonstrativos</button>
+  </div>
+</aside>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- 1. SCIENTIFIC (HOME EXPANDIDA) -->
+<section id="page-scientific" class="page page--active">
+
+  <!-- HERO COM PARALLAX E IMAGENS FLUTUANTES -->
+  <div class="page-hero page-hero--rich">
+    <div class="parallax-bg" id="parallaxBg">
+      <div class="parallax-layer" data-speed="0.15"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=400&q=80" alt="Dente"></div>
+      <div class="parallax-layer" data-speed="0.25"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=400&q=80" alt="Gengiva"></div>
+      <div class="parallax-layer" data-speed="0.35"><img src="https://images.unsplash.com/photo-1581585105580-24b53e2b5b50?auto=format&fit=crop&w=400&q=80" alt="Sorriso"></div>
+      <div class="parallax-layer" data-speed="0.2"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=400&q=80" alt="Radiografia"></div>
+      <div class="parallax-layer" data-speed="0.3"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=400&q=80" alt="Consultório"></div>
+      <div class="parallax-layer" data-speed="0.18"><img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=400&q=80" alt="Tecnologia"></div>
+    </div>
+    <div class="page-hero__grid page-hero__grid--rich">
+      <div class="page-hero__content">
+        <span class="eyebrow" data-anim data-i18n="hero.eyebrow">Conceito científico e prático</span>
+        <h1 class="laser-title" data-anim>
+          <span class="laser-title__text" data-i18n="hero.title">Saúde sustentável é harmonia, equilíbrio e sincronicidade</span>
+          <span class="laser-title__beam"></span>
+          <span class="laser-title__dot"></span>
+        </h1>
+        <p class="page-hero__subtitle" data-anim data-i18n="hero.subtitle">Conceito científico e prático para o tratamento</p>
+        <p class="page-hero__longtext" data-anim data-i18n="home.longIntro1">
+          Na Laser Dental Clinic acreditamos que um sorriso saudável vai muito além da estética. É o resultado de um equilíbrio profundo entre a biologia oral, a função mastigatória, a postura e o bem-estar geral. O nosso conceito científico e prático assenta numa abordagem integrada que identifica a causa raiz dos problemas, estabiliza biologicamente os tecidos e restaura a função de forma duradoura.
+        </p>
+        <p class="page-hero__longtext" data-anim data-i18n="home.longIntro2">
+          Utilizamos diagnóstico funcional e 3D, tecnologia laser de última geração e protocolos regenerativos para criar as condições ideais para que o corpo se cure a si próprio. Cada plano de tratamento é individualizado, desenhado à medida das necessidades e objetivos de cada paciente.
+        </p>
+        <div class="page-hero__actions" data-anim>
+          <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">Marcar consulta</a>
+          <a href="#clinical" class="btn btn--ghost" data-i18n="hero.cta2">Conhecer o método</a>
+        </div>
+      </div>
+      <div class="page-hero__visual" data-anim>
+        <div class="img-wrap img-wrap--hero">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Clínica dentária — imagem demonstrativa">
+          <span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECÇÃO: O QUE É A LASER DENTAL CLINIC -->
+  <div class="container section">
+    <div class="section__head" data-anim>
+      <span class="eyebrow" data-i18n="home.aboutEyebrow">Sobre a clínica</span>
+      <h2 class="section__title" data-i18n="home.aboutTitle">Uma abordagem integrada à medicina dentária moderna</h2>
+    </div>
+    <div class="home-about-grid">
+      <div class="home-about-text" data-anim>
+        <p data-i18n="home.aboutP1">A Laser Dental Clinic é um centro de medicina dentária avançada que combina ciência, tecnologia e humanismo. A nossa equipa multidisciplinar trabalha em conjunto para oferecer um diagnóstico profundo e um tratamento verdadeiramente individualizado.</p>
+        <p data-i18n="home.aboutP2">Acreditamos que cada sintoma é um sinal de um desequilíbrio mais profundo. Por isso, dedicamos tempo a ouvir, a investigar e a compreender a causa raiz antes de propor qualquer tratamento.</p>
+        <p data-i18n="home.aboutP3">O nosso protocolo MFSP™ (Medical Functional Stability Protocol) guia todo o processo, desde a primeira consulta até ao acompanhamento a longo prazo.</p>
+      </div>
+      <div class="home-about-img" data-anim>
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Gengiva — imagem demonstrativa">
+          <span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECÇÃO: TRÊS PILARES COM TEXTO LONGO -->
+  <div class="container section">
+    <div class="section__head" data-anim>
+      <span class="eyebrow" data-i18n="pillars.eyebrow">O método</span>
+      <h2 class="section__title" data-i18n="pillars.title">Três pilares para uma saúde sustentável</h2>
+      <p class="section__lead" data-i18n="home.pillarsLead">Cada pilar representa uma etapa fundamental do nosso protocolo, desenhada para restaurar o equilíbrio e a função de forma duradoura.</p>
+    </div>
+    <div class="pillars-grid">
+      <article class="pillar" data-anim>
+        <div class="pillar__head"><span class="pillar__num">01</span><h3 data-i18n="pillars.mfsp.title">MFSP™</h3></div>
+        <p class="pillar__desc" data-i18n="pillars.mfsp.desc">Descobrimos a causa raiz</p>
+        <p class="pillar__long" data-i18n="home.mfspLong">O MFSP™ é o nosso protocolo de diagnóstico avançado. Começamos por ouvir atentamente a história médica e dentária do paciente, seguida de uma análise funcional e oclusal completa. Utilizamos imagiologia 3D e ferramentas digitais para avaliar a oclusão, a ATM, a postura e o equilíbrio neuromuscular. O resultado é um plano de tratamento individualizado que aborda a verdadeira origem do problema.</p>
+        <ul class="pillar__list">
+          <li data-i18n="pillars.mfsp.i1">Anamnese médica e dentária detalhada</li>
+          <li data-i18n="pillars.mfsp.i2">Diagnóstico funcional e oclusal</li>
+          <li data-i18n="pillars.mfsp.i3">Imagiologia 3D e digital</li>
+          <li data-i18n="pillars.mfsp.i4">Análise da oclusão e ATM</li>
+          <li data-i18n="pillars.mfsp.i5">Análise postural e neuromuscular</li>
+          <li data-i18n="pillars.mfsp.i6">Plano de tratamento individual</li>
+        </ul>
+      </article>
+      <article class="pillar" data-anim>
+        <div class="pillar__head"><span class="pillar__num">02</span><h3 data-i18n="pillars.initial.title">Initial Therapy</h3></div>
+        <p class="pillar__desc" data-i18n="pillars.initial.desc">Estabilização biológica</p>
+        <p class="pillar__long" data-i18n="home.initialLong">A Initial Therapy é a fase de estabilização biológica. Controlamos a infeção e a inflamação, tratamos a doença periodontal e aplicamos bioestimulação laser para acelerar a regeneração dos tecidos. O objetivo é criar um ambiente oral harmonioso e saudável, preparando o terreno para a restauração funcional.</p>
+        <ul class="pillar__list">
+          <li data-i18n="pillars.initial.i1">Controlo de infeção e inflamação</li>
+          <li data-i18n="pillars.initial.i2">Terapia periodontal</li>
+          <li data-i18n="pillars.initial.i3">Bioestimulação laser</li>
+          <li data-i18n="pillars.initial.i4">Regeneração dos tecidos</li>
+          <li data-i18n="pillars.initial.i5">Harmonização do ambiente oral</li>
+          <li data-i18n="pillars.initial.i6">Preparação para restauração funcional</li>
+        </ul>
+      </article>
+      <article class="pillar" data-anim>
+        <div class="pillar__head"><span class="pillar__num">03</span><h3 data-i18n="pillars.bosync.title">BOSYNC™</h3></div>
+        <p class="pillar__desc" data-i18n="pillars.bosync.desc">Restauramos a função</p>
+        <p class="pillar__long" data-i18n="home.bosyncLong">O BOSYNC™ é a fase de restauração funcional. Otimizamos a oclusão, restabelecemos o equilíbrio neuromuscular e integramos próteses e ortodontia de forma harmoniosa. O controlo postural e o acompanhamento contínuo garantem estabilidade a longo prazo e um sorriso funcional e estético.</p>
+        <ul class="pillar__list">
+          <li data-i18n="pillars.bosync.i1">Otimização oclusal</li>
+          <li data-i18n="pillars.bosync.i2">Equilíbrio neuromuscular</li>
+          <li data-i18n="pillars.bosync.i3">Integração protética e ortodôntica</li>
+          <li data-i18n="pillars.bosync.i4">Controlo postural e equilíbrio</li>
+          <li data-i18n="pillars.bosync.i5">Estabilidade e acompanhamento</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <!-- SECÇÃO: RESULTADOS DA JORNADA -->
+  <div class="container section">
+    <div class="section__head" data-anim>
+      <span class="eyebrow" data-i18n="journey.resEyebrow">Resultados</span>
+      <h2 class="section__title" data-i18n="journey.resTitle">Harmonia, equilíbrio funcional e sincronicidade</h2>
+      <p class="section__lead" data-i18n="home.resultsLead">O resultado da jornada do paciente é uma saúde sustentável, onde a função, a estética e o bem-estar coexistem em perfeita harmonia.</p>
+    </div>
+    <div class="results-grid">
+      <div class="result-card" data-anim><h3 data-i18n="journey.res1t">Harmonia</h3><p data-i18n="journey.res1d">Função, estética, conforto e qualidade de vida.</p></div>
+      <div class="result-card" data-anim><h3 data-i18n="journey.res2t">Equilíbrio Funcional</h3><p data-i18n="journey.res2d">Equilíbrio entre a função oral, a postura e a saúde global.</p></div>
+      <div class="result-card" data-anim><h3 data-i18n="journey.res3t">Sincronicidade</h3><p data-i18n="journey.res3d">Trabalho harmonioso de todos os sistemas funcionais.</p></div>
+      <div class="result-card" data-anim><h3 data-i18n="journey.res4t">Saúde Sustentável</h3><p data-i18n="journey.res4d">Harmonia, equilíbrio e sincronicidade — de forma duradoura.</p></div>
+    </div>
+  </div>
+
+  <!-- SECÇÃO: TECNOLOGIAS COM TEXTO LONGO -->
+  <div class="container section">
+    <div class="section__head" data-anim>
+      <span class="eyebrow" data-i18n="tech.eyebrow">Tecnologias</span>
+      <h2 class="section__title" data-i18n="tech.title">Tecnologias inovadoras ao serviço da saúde</h2>
+      <p class="section__lead" data-i18n="home.techLead">Investimos nas tecnologias mais avançadas para oferecer diagnósticos precisos, tratamentos minimamente invasivos e resultados duradouros.</p>
+    </div>
+    <div class="tech-long-grid">
+      <div class="tech-long-card" data-anim><h4>CBCT 3D</h4><p data-i18n="home.cbctLong">A tomografia computorizada de feixe cónico (CBCT) permite obter imagens 3D de alta resolução com uma dose de radiação significativamente inferior à dos exames tradicionais. É essencial para o planeamento de implantes, endodontia e cirurgia.</p></div>
+      <div class="tech-long-card" data-anim><h4>WATERLASE</h4><p data-i18n="home.waterlaseLong">O laser de água é uma tecnologia minimamente invasiva que permite tratar tecidos duros e moles com precisão, reduzindo o desconforto, o sangramento e o tempo de recuperação.</p></div>
+      <div class="tech-long-card" data-anim><h4>Diagnocam</h4><p data-i18n="home.diagnocamLong">O Diagnocam utiliza fluorescência laser para detetar cáries em estágios iniciais, sem radiação ionizante, permitindo intervenções preventivas e preservação máxima do tecido dentário.</p></div>
+      <div class="tech-long-card" data-anim><h4>Scanner Intraoral</h4><p data-i18n="home.scannerLong">Substitui as moldagens tradicionais por impressões digitais precisas e confortáveis, agilizando o planeamento e a comunicação com o laboratório.</p></div>
+    </div>
+  </div>
+
+  <!-- SECÇÃO FINAL: CTA -->
+  <div class="container section">
+    <div class="home-cta" data-anim>
+      <h2 data-i18n="home.ctaTitle">Pronto para transformar o seu sorriso?</h2>
+      <p data-i18n="home.ctaText">Marque uma consulta de avaliação e descubra como o nosso protocolo pode ajudar a restaurar a sua saúde oral de forma sustentável.</p>
+      <a href="#contact" class="btn btn--primary" data-i18n="home.ctaButton">Marcar consulta</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. JOURNEY -->
+<section id="page-journey" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="journey.eyebrow">Jornada do paciente</span>
+      <h1 class="page-hero__title" data-anim data-i18n="journey.title">Uma jornada rumo à saúde sustentável</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="journey.lead">Sete etapas desde o sintoma até ao acompanhamento a longo prazo.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="journey-list">
+      <div class="journey-item" data-anim><div class="journey-item__num">01</div><div class="journey-item__body"><h3 data-i18n="journey.s1t">Sintoma</h3><p data-i18n="journey.s1d">Quando o sintoma é um sinal, procuramos a causa.</p></div></div>
+      <div class="journey-item" data-anim><div class="journey-item__num">02</div><div class="journey-item__body"><h3 data-i18n="journey.s2t">Diagnóstico MFSP™</h3><p data-i18n="journey.s2d">Diagnóstico e análise abrangentes.</p></div></div>
+      <div class="journey-item" data-anim><div class="journey-item__num">03</div><div class="journey-item__body"><h3 data-i18n="journey.s3t">Plano Individual</h3><p data-i18n="journey.s3d">Plano personalizado, adaptado às suas necessidades e prognóstico.</p></div></div>
+      <div class="journey-item" data-anim><div class="journey-item__num">04</div><div class="journey-item__body"><h3 data-i18n="journey.s4t">Terapia Inicial</h3><p data-i18n="journey.s4d">Controlo de infeção e inflamação. Estabilização biológica.</p></div></div>
+      <div class="journey-item" data-anim><div class="journey-item__num">05</div><div class="journey-item__body"><h3 data-i18n="journey.s5t">BOSYNC™</h3><p data-i18n="journey.s5d">Restauração biológica, oclusal e estrutural.</p></div></div>
+      <div class="journey-item" data-anim><div class="journey-item__num">06</div><div class="journey-item__body"><h3 data-i18n="journey.s6t">Avaliação Final</h3><p data-i18n="journey.s6d">Avaliação dos resultados e da estabilidade.</p></div></div>
+      <div class="journey-item" data-anim><div class="journey-item__num">07</div><div class="journey-item__body"><h3 data-i18n="journey.s7t">Programa de Suporte</h3><p data-i18n="journey.s7d">Consultas regulares, profilaxia e acompanhamento a longo prazo.</p></div></div>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="section__head" data-anim>
+      <span class="eyebrow" data-i18n="journey.resEyebrow">Resultados</span>
+      <h2 class="section__title" data-i18n="journey.resTitle">Harmonia, equilíbrio funcional e sincronicidade</h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-card" data-anim><h3 data-i18n="journey.res1t">Harmonia</h3><p data-i18n="journey.res1d">Função, estética, conforto e qualidade de vida.</p></div>
+      <div class="result-card" data-anim><h3 data-i18n="journey.res2t">Equilíbrio Funcional</h3><p data-i18n="journey.res2d">Equilíbrio entre a função oral, a postura e a saúde global.</p></div>
+      <div class="result-card" data-anim><h3 data-i18n="journey.res3t">Sincronicidade</h3><p data-i18n="journey.res3d">Trabalho harmonioso de todos os sistemas funcionais.</p></div>
+      <div class="result-card" data-anim><h3 data-i18n="journey.res4t">Saúde Sustentável</h3><p data-i18n="journey.res4d">Harmonia, equilíbrio e sincronicidade — de forma duradoura.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CLINICAL -->
+<section id="page-clinical" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="dir.eyebrow">Especialidades</span>
+      <h1 class="page-hero__title" data-anim data-i18n="dir.title">Áreas clínicas</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="dir.lead">Especialidades unidas por uma única conceção funcional de diagnóstico, tratamento e acompanhamento.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="clinical-grid">
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" alt="Periodontologia"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.perio.t">Periodontologia</h3><p data-i18n="dir.perio.d">Tratamento especializado das gengivas e estruturas de suporte. Controlamos a inflamação, tratamos a periodontite e criamos as condições biológicas necessárias para uma saúde oral estável a longo prazo.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80" alt="Cariologia"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.caries.t">Cariologia &amp; Restauradora</h3><p data-i18n="dir.caries.d">Abordagem minimamente invasiva da cárie dentária. Preservamos o máximo de tecido saudável e restauramos o dente com materiais biocompatíveis, devolvendo função e estética.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=700&q=80" alt="Endodontia"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.endo.t">Endodontia</h3><p data-i18n="dir.endo.d">Tratamento de canais radiculares com tecnologia moderna e microscopia. O objetivo é eliminar a infeção, preservar o dente natural e evitar extrações desnecessárias.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80" alt="Ortodontia"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.ortho.t">Ortodontia</h3><p data-i18n="dir.ortho.d">Correção do alinhamento dentário e da oclusão com aparelhos fixos ou alinhadores transparentes. Planeado individualmente para melhorar a função mastigatória e o equilíbrio facial.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80" alt="Ortodontia Funcional"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.funcOrtho.t">Ortodontia Funcional — Ortho‑T Center</h3><p data-i18n="dir.funcOrtho.d">Diagnóstico funcional avançado, acompanhamento do crescimento e desenvolvimento, equilíbrio músculo-oclusal e tratamento individualizado. Indicado para crianças, adolescentes e adultos.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=700&q=80" alt="Prótese"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.prostho.t">Prótese &amp; Reabilitação Funcional</h3><p data-i18n="dir.prostho.d">Reabilitação oral completa com coroas, pontes e próteses. Restauramos estética, função mastigatória, dimensão vertical e estabilidade oclusal com materiais de alta durabilidade.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Cirurgia"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.surgery.t">Cirurgia &amp; Implantologia</h3><p data-i18n="dir.surgery.d">Preservação de tecidos, regeneração óssea e colocação de implantes. Técnicas minimamente invasivas para controlar a infeção, regenerar tecidos e restaurar a função com previsibilidade e segurança.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="Medicina Desportiva"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.sports.t">Medicina Dentária Desportiva &amp; Trauma</h3><p data-i18n="dir.sports.d">Prevenção e tratamento de traumatismos dentários em atletas. Proteções personalizadas, avaliação imediata de lesões e reabilitação funcional. Quando cada minuto conta, a intervenção rápida faz a diferença.</p></div>
+      </article>
+      <article class="clinical-card" data-anim>
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=700&q=80" alt="Pediatria"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+        <div class="clinical-card__body"><h3 data-i18n="dir.pedo.t">Pediatria &amp; Desenvolvimento Funcional</h3><p data-i18n="dir.pedo.d">Acompanhamento do crescimento e desenvolvimento oral da criança. Quatro níveis de tratamento individual (Basic, Functional, Premium, Complex) para prevenir, corrigir e orientar o desenvolvimento desde cedo.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. LEVELS -->
+<section id="page-levels" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="lvl.eyebrow">Níveis de tratamento</span>
+      <h1 class="page-hero__title" data-anim data-i18n="lvl.title">Quatro níveis de tratamento individual</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="lvl.lead">Cada paciente recebe um plano personalizado, dimensionado à complexidade do seu caso e aos seus objetivos de saúde.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="levels-grid">
+      <article class="level-card" data-anim><span class="level-card__num">01</span><h3>Basic</h3><p class="level-card__desc" data-i18n="lvl.basic.d">Consultas essenciais, diagnóstico inicial e controlo preventivo.</p><ul class="level-card__features"><li data-i18n="lvl.basic.f1">Avaliação clínica completa</li><li data-i18n="lvl.basic.f2">Diagnóstico inicial</li><li data-i18n="lvl.basic.f3">Plano preventivo</li><li data-i18n="lvl.basic.f4">Acompanhamento básico</li></ul></article>
+      <article class="level-card level-card--featured" data-anim><span class="level-card__num">02</span><h3>Functional</h3><p class="level-card__desc" data-i18n="lvl.func.d">Diagnóstico funcional e estabilização biológica.</p><ul class="level-card__features"><li data-i18n="lvl.func.f1">Diagnóstico funcional 3D</li><li data-i18n="lvl.func.f2">Análise oclusal e postural</li><li data-i18n="lvl.func.f3">Estabilização biológica</li><li data-i18n="lvl.func.f4">Plano funcional integrado</li></ul></article>
+      <article class="level-card" data-anim><span class="level-card__num">03</span><h3>Premium</h3><p class="level-card__desc" data-i18n="lvl.prem.d">Reabilitação funcional e estética alargada.</p><ul class="level-card__features"><li data-i18n="lvl.prem.f1">Reabilitação funcional completa</li><li data-i18n="lvl.prem.f2">Otimização oclusal</li><li data-i18n="lvl.prem.f3">Estética dentária avançada</li><li data-i18n="lvl.prem.f4">Tecnologias personalizadas</li></ul></article>
+      <article class="level-card" data-anim><span class="level-card__num">04</span><h3>Complex</h3><p class="level-card__desc" data-i18n="lvl.cplx.d">Casos complexos com reabilitação completa e multidisciplinar.</p><ul class="level-card__features"><li data-i18n="lvl.cplx.f1">Abordagem multidisciplinar</li><li data-i18n="lvl.cplx.f2">Cirurgia e regeneração</li><li data-i18n="lvl.cplx.f3">Reabilitação total da função</li><li data-i18n="lvl.cplx.f4">Acompanhamento dedicado</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. TECH -->
+<section id="page-tech" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="tech.eyebrow">Tecnologias</span>
+      <h1 class="page-hero__title" data-anim data-i18n="tech.title">Tecnologias inovadoras</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="tech.lead">A ciência é mais forte quando serve as pessoas.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="tech-hero-img" data-anim>
+      <div class="img-wrap img-wrap--wide"><img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1400&q=80" alt="Tecnologia"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+    </div>
+    <h3 class="tech-category" data-anim data-i18n="tech.diag.title">Diagnóstico de alta tecnologia</h3>
+    <div class="tech-grid">
+      <div class="tech-card" data-anim><h4>CBCT 3D</h4><p data-i18n="tech.diag.cbct">Diagnóstico 3D de alta resolução com baixa dose de radiação.</p></div>
+      <div class="tech-card" data-anim><h4>Diagnocam</h4><p data-i18n="tech.diag.dcam">Deteção precoce de cáries sem radiação ionizante.</p></div>
+      <div class="tech-card" data-anim><h4>Scanner Intraoral</h4><p data-i18n="tech.diag.scan">Impressões digitais para planeamento preciso.</p></div>
+    </div>
+    <h3 class="tech-category" data-anim data-i18n="tech.bio.title">Tecnologias biológicas e regenerativas</h3>
+    <div class="tech-grid">
+      <div class="tech-card" data-anim><h4>WATERLASE</h4><p data-i18n="tech.bio.wl">Tecnologia laser para trabalho minimamente invasivo.</p></div>
+      <div class="tech-card" data-anim><h4>Cirurgia Laser</h4><p data-i18n="tech.bio.surg">Incisões precisas, controlo de hemorragia.</p></div>
+      <div class="tech-card" data-anim><h4>Fotobiomodulação</h4><p data-i18n="tech.bio.pbm">Terapia de luz não invasiva para cicatrização.</p></div>
+    </div>
+    <h3 class="tech-category" data-anim data-i18n="tech.func.title">Tecnologias funcionais</h3>
+    <div class="tech-grid">
+      <div class="tech-card" data-anim><h4>Taopatch</h4><p data-i18n="tech.func.tao">Tecnologia fotónica vestível para equilíbrio postural.</p></div>
+      <div class="tech-card" data-anim><h4>Análise Oclusal</h4><p data-i18n="tech.func.ocl">Análise computorizada dos contactos oclusais.</p></div>
+      <div class="tech-card" data-anim><h4>Análise Neuromuscular</h4><p data-i18n="tech.func.neu">Avaliação do equilíbrio neuromuscular.</p></div>
+    </div>
+    <h3 class="tech-category" data-anim data-i18n="tech.pers.title">Medicina personalizada</h3>
+    <div class="tech-grid">
+      <div class="tech-card" data-anim><h4 data-i18n="tech.pers.dna.t">Testes de ADN</h4><p data-i18n="tech.pers.dna.d">Avaliação de predisposições genéticas.</p></div>
+      <div class="tech-card" data-anim><h4 data-i18n="tech.pers.mic.t">Análises Microbiológicas</h4><p data-i18n="tech.pers.mic.d">Avaliação da flora oral e patogénicos.</p></div>
+      <div class="tech-card" data-anim><h4 data-i18n="tech.pers.sal.t">Análise da Saliva</h4><p data-i18n="tech.pers.sal.d">Fluxo salivar, pH, capacidade tampão.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CARE -->
+<section id="page-care" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="care.eyebrow">Cuidados a longo prazo</span>
+      <h1 class="page-hero__title" data-anim data-i18n="care.title">Programas de suporte a longo prazo</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="care.lead">A saúde sustentável exige acompanhamento contínuo. Os nossos programas garantem estabilidade, prevenção e longevidade dos resultados.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="care-grid">
+      <div class="care-card" data-anim><h3>Elite</h3><p data-i18n="care.elite.d">Profilaxia e controlo, cuidado profissional para a sua saúde.</p><ul class="care-card__features"><li data-i18n="care.elite.f1">Consultas de controlo regulares</li><li data-i18n="care.elite.f2">Profilaxia profissional</li><li data-i18n="care.elite.f3">Acompanhamento personalizado</li><li data-i18n="care.elite.f4">Prioridade de agendamento</li></ul></div>
+      <div class="care-card" data-anim><h3>Premium</h3><p data-i18n="care.prem.d">Cuidados alargados, profilaxia personalizada e controlo.</p><ul class="care-card__features"><li data-i18n="care.prem.f1">Tudo do programa Elite</li><li data-i18n="care.prem.f2">Profilaxia personalizada</li><li data-i18n="care.prem.f3">Análises periódicas</li><li data-i18n="care.prem.f4">Acesso a tecnologia avançada</li></ul></div>
+      <div class="care-card" data-anim><h3>Gold</h3><p data-i18n="care.gold.d">Cuidado máximo, plano individual e atendimento prioritário.</p><ul class="care-card__features"><li data-i18n="care.gold.f1">Tudo do programa Premium</li><li data-i18n="care.gold.f2">Plano individual dedicado</li><li data-i18n="care.gold.f3">Atendimento prioritário</li><li data-i18n="care.gold.f4">Coordenação multidisciplinar</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. RESEARCH -->
+<section id="page-research" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="res.eyebrow">Conhecimento &amp; Investigação</span>
+      <h1 class="page-hero__title" data-anim data-i18n="res.title">Centro de conhecimento e investigação</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="res.lead">Partilhamos ciência porque acreditamos que o conhecimento é o primeiro passo para uma saúde sustentável.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="articles-grid">
+      <article class="article-card" data-anim><div class="img-wrap"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" alt="Artigo"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div><div class="article-card__body"><h3 data-i18n="res.a1t">Função, oclusão e postura</h3><p data-i18n="res.a1d">Uma visão abrangente das inter-relações entre oclusão, função mastigatória e equilíbrio postural.</p></div></article>
+      <article class="article-card" data-anim><div class="img-wrap"><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=80" alt="Artigo"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div><div class="article-card__body"><h3 data-i18n="res.a2t">Do sintoma à causa raiz</h3><p data-i18n="res.a2d">Como a diagnóstica integrada revela a causa profunda e permite tratamentos verdadeiramente individualizados.</p></div></article>
+      <article class="article-card" data-anim><div class="img-wrap"><img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=900&q=80" alt="Artigo"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div><div class="article-card__body"><h3 data-i18n="res.a3t">Laser e regeneração</h3><p data-i18n="res.a3d">O papel das tecnologias laser e dos protocolos regenerativos na preservação de tecidos e na longevidade dos resultados.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PRICING -->
+<section id="page-pricing" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="pri.eyebrow">Preços &amp; financiamento</span>
+      <h1 class="page-hero__title" data-anim data-i18n="pri.title">Transparência em cada etapa</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="pri.lead">Soluções flexíveis, pensadas para diferentes necessidades e fases de tratamento.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="levels-grid">
+      <article class="level-card" data-anim><span class="level-card__num">01</span><h3>Basic</h3><p class="level-card__desc" data-i18n="lvl.basic.d">Consultas essenciais e diagnóstico inicial.</p><a href="#contact" class="btn btn--ghost" data-i18n="pri.cta">Pedir orçamento →</a></article>
+      <article class="level-card level-card--featured" data-anim><span class="level-card__num">02</span><h3>Functional</h3><p class="level-card__desc" data-i18n="lvl.func.d">Diagnóstico funcional e estabilização biológica.</p><a href="#contact" class="btn btn--gold" data-i18n="pri.cta">Pedir orçamento →</a></article>
+      <article class="level-card" data-anim><span class="level-card__num">03</span><h3>Premium</h3><p class="level-card__desc" data-i18n="lvl.prem.d">Reabilitação funcional e estética alargada.</p><a href="#contact" class="btn btn--ghost" data-i18n="pri.cta">Pedir orçamento →</a></article>
+      <article class="level-card" data-anim><span class="level-card__num">04</span><h3>Complex</h3><p class="level-card__desc" data-i18n="lvl.cplx.d">Casos complexos com reabilitação completa.</p><a href="#contact" class="btn btn--ghost" data-i18n="pri.cta">Pedir orçamento →</a></article>
+    </div>
+    <div class="pricing-note" data-anim>
+      <p data-i18n="pri.fin">Financiamento disponível em prestações flexíveis, adaptadas ao seu plano de tratamento.</p>
+      <p class="pricing-note__small" data-i18n="pri.note">Os valores apresentados são demonstrativos. Será apresentado um orçamento detalhado após a consulta de avaliação.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. ABOUT -->
+<section id="page-about" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="ab.eyebrow">Sobre nós</span>
+      <h1 class="page-hero__title" data-anim data-i18n="ab.title">Uma abordagem integrada à medicina dentária moderna</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="ab.lead">Na Laser Dental Clinic combinamos diagnóstico funcional, tecnologia avançada e um plano individual para descobrir a causa profunda — não apenas o sintoma.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="about-grid">
+      <div class="img-wrap img-wrap--about" data-anim><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Consultório"><span class="img-badge" data-i18n="common.demoImage">Imagem demonstrativa</span></div>
+      <div class="about-content" data-anim>
+        <h3 data-i18n="ab.missT">Missão</h3>
+        <p data-i18n="ab.miss">Devolver às pessoas uma saúde oral sustentável, através de um diagnóstico profundo, tecnologia avançada e um plano verdadeiramente individualizado.</p>
+        <h3 data-i18n="ab.visT">Visão</h3>
+        <p data-i18n="ab.vis">Ser a referência em medicina dentária funcional, integrando ciência, tecnologia e humanismo em cada tratamento.</p>
+        <h3 data-i18n="ab.valT">Valores</h3>
+        <p data-i18n="ab.val">Rigor científico · Humanismo · Transparência · Inovação · Sustentabilidade clínica</p>
+      </div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat" data-anim><span class="stat__num" data-count="20">0</span><span class="stat__label" data-i18n="ab.s1">anos de experiência clínica</span></div>
+      <div class="stat" data-anim><span class="stat__num" data-count="5000">0</span><span class="stat__label" data-i18n="ab.s2">pacientes acompanhados</span></div>
+      <div class="stat" data-anim><span class="stat__num" data-count="9">0</span><span class="stat__label" data-i18n="ab.s3">áreas clínicas integradas</span></div>
+      <div class="stat" data-anim><span class="stat__num">100%</span><span class="stat__label" data-i18n="ab.s4">compromisso com a excelência</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CONTACT -->
+<section id="page-contact" class="page">
+  <div class="page-hero page-hero--compact">
+    <div class="container">
+      <span class="eyebrow" data-anim data-i18n="ct.eyebrow">Contacto</span>
+      <h1 class="page-hero__title" data-anim data-i18n="ct.title">Marque uma consulta</h1>
+      <p class="page-hero__subtitle" data-anim data-i18n="ct.lead">Estamos disponíveis para o acompanhar num plano individualizado e sustentável.</p>
+    </div>
+  </div>
+  <div class="container section">
+    <div class="contact-grid">
+      <div class="contact-info" data-anim>
+        <h3 data-i18n="ct.mapT">Localização</h3>
+        <ul class="contact__list">
+          <li><strong data-i18n="ct.addrL">Endereço</strong><span>Sofia 1000, Rua Chumerna 12</span></li>
+          <li><strong data-i18n="ct.phoneL">Telefone</strong><a href="tel:+359897272070">+359 89 727 2070</a></li>
+          <li><strong data-i18n="ct.emailL">Email</strong><a href="mailto:info@laserdentalclinic-bg.com">info@laserdentalclinic-bg.com</a></li>
+          <li><strong data-i18n="ct.schedL">Horário</strong><span data-i18n="ct.sched">Apenas com marcação prévia.</span></li>
+        </ul>
+        <p class="contact-note" data-i18n="ct.schedNote">As consultas são realizadas apenas com marcação prévia. Pode marcar através do formulário, WhatsApp ou Viber.</p>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.534!2d23.3299265!3d42.7019264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa857b4814e0f3%3A0x11949fd71187bd93!2sCenter%20of%20Dental%20Medicine!5e0!3m2!1sen!2sbg!4v1700000000000!5m2!1sen!2sbg" width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" title="Localização"></iframe>
+          <span class="img-badge img-badge--map" data-i18n="common.demoMap">Mapa demonstrativo</span>
+        </div>
+      </div>
+      <form class="contact-form" id="bookingForm" data-anim>
+        <h3 data-i18n="ct.formT">Pedido de marcação</h3>
+        <input type="text" name="name" placeholder="Nome" data-i18n-placeholder="ct.name" required>
+        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="ct.email" required>
+        <input type="tel" name="phone" placeholder="Telefone" data-i18n-placeholder="ct.phone">
+        <textarea name="message" rows="5" placeholder="Mensagem" data-i18n-placeholder="ct.msg"></textarea>
+        <button type="submit" class="btn btn--primary" data-i18n="ct.submit">Enviar pedido</button>
+        <p class="form-note" data-i18n="ct.formNote">Formulário demonstrativo — nenhum dado é enviado neste projeto da Convertix Studio.</p>
+      </form>
+    </div>
+  </div>
+  <div class="social-bar">
+    <div class="container social-bar__inner" data-anim>
+      <p data-i18n="ct.socialT">Siga-nos e contacte-nos</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/laseredentalclinic/" target="_blank" rel="noopener" class="social-link">Facebook</a>
+        <a href="https://laserdentalclinic-bg.com/en/" target="_blank" rel="noopener" class="social-link">Website oficial</a>
+        <a href="viber://chat?number=%2B359897272070" class="social-link">Viber</a>
+        <a href="https://wa.me/359897272070" target="_blank" rel="noopener" class="social-link">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="url(#logoGrad)" stroke="#c9a44a" stroke-width="1.5"/>
+        <path d="M13 26 L20 10 L27 26" fill="none" stroke="#e8d49a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="20" cy="20" r="3" fill="#c9a44a"/>
+      </svg>
+      <span>Laser Dental Clinic</span>
+    </div>
+    <p class="footer__demo" data-i18n="ft.demo">Site demonstrativo desenvolvido por Convertix Studio. Conteúdo e imagens meramente ilustrativos.</p>
+    <p class="footer__copyright">© <span id="year"></span> Laser Dental Clinic — <span data-i18n="ft.rights">Todos os direitos reservados.</span></p>
+  </div>
+</footer>
+
+<!-- MODAIS -->
+<div class="modal" id="modal-terms"><div class="modal__content modal__content--legal"><button class="modal__close" aria-label="Fechar">×</button><h2 data-i18n="lg.termsT">Termos e Condições</h2><div class="legal-scroll"><p data-i18n="lg.termsP1">Este site é uma demonstração desenvolvida pela Convertix Studio. Todo o conteúdo é meramente ilustrativo e não constitui aconselhamento médico ou dentário.</p><p data-i18n="lg.termsP2">O uso deste site é da responsabilidade do utilizador. A Convertix Studio não se responsabiliza por quaisquer decisões tomadas com base nas informações apresentadas.</p></div></div></div>
+<div class="modal" id="modal-privacy"><div class="modal__content modal__content--legal"><button class="modal__close" aria-label="Fechar">×</button><h2 data-i18n="lg.privT">Política de Privacidade</h2><div class="legal-scroll"><p data-i18n="lg.privP1">Esta é uma demonstração da Convertix Studio. Nenhum dado pessoal é recolhido, armazenado ou processado através deste site.</p><p data-i18n="lg.privP2">O formulário de contacto é fictício e não envia informações para nenhum servidor. Se este site fosse implementado na sua versão final, seria acompanhado de uma política de privacidade completa em conformidade com o RGPD.</p></div></div></div>
+<div class="modal" id="modal-cookies"><div class="modal__content modal__content--legal"><button class="modal__close" aria-label="Fechar">×</button><h2 data-i18n="lg.cookT">Política de Cookies</h2><div class="legal-scroll"><p data-i18n="lg.cookP1">Este site demonstrativo não utiliza cookies de rastreamento ou publicidade. Apenas podem ser utilizados cookies técnicos essenciais para o funcionamento da demonstração.</p><p data-i18n="lg.cookP2">Para a versão final, será implementado um sistema de gestão de consentimento de cookies de acordo com a legislação aplicável.</p></div></div></div>
+<div class="modal" id="modal-booking"><div class="modal__content"><button class="modal__close" aria-label="Fechar">×</button><h2 data-i18n="md.title">Obrigado!</h2><p data-i18n="md.desc">O seu pedido foi enviado. Entraremos em contacto brevemente.</p><p class="modal__note" data-i18n="md.note">Demonstração — nenhum dado foi realmente enviado.</p></div></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

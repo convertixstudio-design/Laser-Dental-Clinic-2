@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Laser Dental Clinic | Sofia — Demo SPA</title>
+<meta name="description" content="Site demonstrativo da Laser Dental Clinic. Desenvolvido por Convertix Studio.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--p900:#2b1747;--p800:#3a2260;--p700:#4a2d7a;--p600:#5b3a8e;--p500:#6d4aa3;
+--p300:#c7b4e0;--p100:#f2ecfa;--p50:#faf7fd;
+--g600:#b8892b;--g500:#c9a44a;--g400:#d9b968;--g300:#e8d49a;
+--white:#fff;--off:#fbf9fd;--ink:#1f132f;--muted:#6a5d7d;--bd:#eadff5;
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;
+--r:14px;--sh-sm:0 6px 20px rgba(43,23,71,.06);--sh-md:0 14px 40px rgba(43,23,71,.10);--sh-lg:0 24px 60px rgba(43,23,71,.14);
+--sb:260px;--hd:76px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:16px;line-height:1.65;color:var(--ink);background:var(--off);overflow-x:clip}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;color:var(--p900);line-height:1.15;letter-spacing:.2px}
+.container{width:min(1240px,92%);margin-inline:auto}
+.eyebrow{display:inline-block;font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--g600);margin-bottom:.8rem}
+.section{padding-block:5rem}
+.demo-banner{background:var(--p900);color:var(--g300);font-size:.75rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;padding:.6rem 1rem;text-align:center}
+.header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+.header__inner{display:flex;align-items:center;justify-content:space-between;padding-block:1.1rem;gap:1.5rem;width:min(1240px,92%);margin-inline:auto}
+.logo{display:flex;align-items:center;gap:.7rem;font-family:var(--serif);font-weight:600;color:var(--p900);font-size:1.1rem}
+.header__actions{display:flex;align-items:center;gap:1rem}
+.lang-switcher{display:flex;gap:.35rem}
+.lang-btn{border:1px solid var(--bd);background:#fff;border-radius:6px;padding:.35rem .75rem;font-size:.78rem;font-weight:600;color:var(--p700);transition:all .3s}
+.lang-btn.active,.lang-btn:hover{background:var(--p700);color:#fff;border-color:var(--p700)}
+.sidebar-toggle{display:flex;flex-direction:column;gap:4px;padding:.45rem}
+.sidebar-toggle span{display:block;width:22px;height:2px;background:var(--p900);border-radius:2px}
+.sidebar{position:fixed;top:0;right:0;width:var(--sb);height:100vh;background:var(--p900);color:#fff;padding:2.5rem 1.6rem 2rem;display:flex;flex-direction:column;justify-content:space-between;z-index:200;transform:translateX(100%);transition:transform .45s cubic-bezier(.19,1,.22,1);overflow-y:auto}
+.sidebar.open{transform:translateX(0)}
+.sidebar__close{position:absolute;top:1rem;right:1rem;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.2);color:var(--g300);font-size:1.6rem;display:flex;align-items:center;justify-content:center}
+.sidebar__nav ul{display:grid;gap:.85rem}
+.sidebar__nav a{color:rgba(255,255,255,.82);font-size:.9rem;font-weight:500;display:block;padding:.35rem 0;transition:color .3s}
+.sidebar__nav a:hover,.sidebar__nav a.active{color:var(--g300);padding-left:4px}
+.sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(20,8,35,.55);z-index:199}
+.sidebar-overlay.active{display:block}
+.main{min-height:calc(100vh - var(--hd) - 100px)}
+.page{display:none}
+.page.page--active{display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.95rem 2.2rem;border-radius:50px;font-weight:600;font-size:.92rem;border:1.5px solid transparent;transition:all .35s}
+.btn--primary{background:var(--p700);color:#fff;box-shadow:0 10px 24px rgba(74,45,122,.25)}
+.btn--primary:hover{background:var(--p900);transform:translateY(-2px)}
+.btn--ghost{background:transparent;color:var(--p700);border-color:var(--p300)}
+.btn--ghost:hover{background:var(--p100)}
+.img-wrap{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-md);background:var(--p100);aspect-ratio:4/3}
+.img-wrap img{width:100%;height:100%;object-fit:cover}
+.img-badge{position:absolute;top:12px;right:12px;background:rgba(43,23,71,.85);color:var(--g300);font-size:.65rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:.35rem .7rem;border-radius:4px}
+.laser-title{position:relative;display:inline-block}
+.laser-title__text{position:relative;z-index:2;background:linear-gradient(90deg,var(--p900) 0%,var(--p900) 45%,var(--g500) 50%,var(--p900) 55%,var(--p900) 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:laserSweep 4s ease-in-out infinite}
+@keyframes laserSweep{0%{background-position:100% 0}50%{background-position:0 0}100%{background-position:100% 0}}
+.laser-title__beam{position:absolute;left:0;bottom:-6px;width:0;height:3px;background:linear-gradient(90deg,transparent,var(--g500),transparent);animation:beamMove 3.5s ease-in-out infinite;z-index:3}
+@keyframes beamMove{0%{left:0;width:0;opacity:0}20%{opacity:1}50%{left:0;width:100%}80%{opacity:1}100%{left:100%;width:0;opacity:0}}
+.page-hero{padding:4rem 0 5rem;background:linear-gradient(135deg,var(--p50) 0%,#fff 100%);position:relative;overflow:hidden}
+.page-hero__grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:4rem;align-items:center;width:min(1240px,92%);margin-inline:auto}
+.footer{background:var(--p900);color:rgba(255,255,255,.75);padding:2.5rem 1rem 2rem;font-size:.85rem;text-align:center}
+.footer__inner{display:grid;gap:1rem;justify-items:center;max-width:900px;margin-inline:auto}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Site demonstrativo — desenvolvido por Convertix Studio. Laser Dental Clinic Sofia.</div>
+
+<header class="header">
+  <div class="header__inner">
+    <a href="#scientific" class="logo" onclick="switchPage('scientific')">
+      <span>Laser Dental Clinic</span>
+    </a>
+    <div class="header__actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('pt')">PT</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('bg')">BG</button>
+      </div>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menu" onclick="toggleSidebar()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <button class="sidebar__close" onclick="toggleSidebar()">×</button>
+  <nav class="sidebar__nav">
+    <ul>
+      <li><a href="#scientific" class="active" onclick="switchPage('scientific'); toggleSidebar();">Conceito científico e prático</a></li>
+      <li><a href="#journey" onclick="switchPage('journey'); toggleSidebar();">Jornada do paciente</a></li>
+      <li><a href="#clinical" onclick="switchPage('clinical'); toggleSidebar();">Disciplinas clínicas</a></li>
+      <li><a href="#levels" onclick="switchPage('levels'); toggleSidebar();">Quatro níveis de tratamento</a></li>
+      <li><a href="#tech" onclick="switchPage('tech'); toggleSidebar();">Tecnologias inovadoras</a></li>
+      <li><a href="#care" onclick="switchPage('care'); toggleSidebar();">Cuidados a longo prazo</a></li>
+      <li><a href="#research" onclick="switchPage('research'); toggleSidebar();">Centro de conhecimento e investigação</a></li>
+      <li><a href="#pricing" onclick="switchPage('pricing'); toggleSidebar();">Preços e financiamento</a></li>
+      <li><a href="#about" onclick="switchPage('about'); toggleSidebar();">Sobre nós</a></li>
+      <li><a href="#contact" onclick="switchPage('contact'); toggleSidebar();">Contacto</a></li>
+    </ul>
+  </nav>
+</aside>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<main class="main">
+  <!-- SCIENTIFIC / HOME PAGE -->
+  <section id="page-scientific" class="page page--active">
+    <div class="page-hero">
+      <div class="page-hero__grid">
+        <div class="page-hero__content">
+          <span class="eyebrow">Conceito científico e prático</span>
+          <h1 class="laser-title">
+            <span class="laser-title__text">Saúde sustentável é harmonia, equilíbrio e sincronicidade</span>
+            <span class="laser-title__beam"></span>
+          </h1>
+          <p class="page-hero__subtitle" style="margin-top:1rem;color:var(--muted)">Na Laser Dental Clinic combinamos diagnóstico funcional avançado, tecnologia laser Waterlase e protocolos biológicos para restaurar a saúde oral.</p>
+          <div style="margin-top:2rem;display:flex;gap:1rem;">
+            <a href="#contact" class="btn btn--primary" onclick="switchPage('contact')">Marcar consulta</a>
+            <a href="#clinical" class="btn btn--ghost" onclick="switchPage('clinical')">Disciplinas clínicas</a>
+          </div>
+        </div>
+        <div class="page-hero__visual">
+          <div class="img-wrap">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Laser Dental Clinic Sofia">
+            <span class="img-badge">Sofia · Bulgaria</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY PAGE -->
+  <section id="page-journey" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Jornada do paciente</h2>
+      <p style="color:var(--muted)">Sete etapas desde o sintoma até ao acompanhamento a longo prazo.</p>
+    </div>
+  </section>
+
+  <!-- CLINICAL DISCIPLINES PAGE -->
+  <section id="page-clinical" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Disciplinas clínicas</h2>
+      <p style="color:var(--muted)">Especialidades unidas por uma única conceção funcional.</p>
+    </div>
+  </section>
+
+  <!-- LEVELS PAGE -->
+  <section id="page-levels" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Quatro níveis de tratamento</h2>
+      <p style="color:var(--muted)">Basic, Functional, Premium e Complex.</p>
+    </div>
+  </section>
+
+  <!-- TECH PAGE -->
+  <section id="page-tech" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Tecnologias inovadoras</h2>
+      <p style="color:var(--muted)">Waterlase, CBCT 3D, Diagnocam e Scanner Intraoral.</p>
+    </div>
+  </section>
+
+  <!-- CARE PAGE -->
+  <section id="page-care" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Cuidados a longo prazo</h2>
+      <p style="color:var(--muted)">Programas Elite, Premium e Gold.</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH PAGE -->
+  <section id="page-research" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Centro de conhecimento e investigação</h2>
+      <p style="color:var(--muted)">Artigos científicos e investigação clínica.</p>
+    </div>
+  </section>
+
+  <!-- PRICING PAGE -->
+  <section id="page-pricing" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Preços e financiamento</h2>
+      <p style="color:var(--muted)">Transparência em cada etapa e prestações flexíveis.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT PAGE -->
+  <section id="page-about" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Sobre nós</h2>
+      <p style="color:var(--muted)">Missão, visão e valores da Laser Dental Clinic em Sófia.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section id="page-contact" class="page">
+    <div class="container section">
+      <h2 style="font-size:2.5rem;margin-bottom:1rem">Contacto</h2>
+      <p style="color:var(--muted)">Rua Chumerna 12, Sofia 1000 · Tel: +359 89 727 2070</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>Laser Dental Clinic — Sofia, Bulgaria</span>
+    <p>© <span id="year"></span> Laser Dental Clinic. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('active');
+}
+function switchPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('page--active'));
+  const target = document.getElementById('page-' + pageId);
+  if (target) target.classList.add('page--active');
+  window.scrollTo(0, 0);
+}
+function setLang(lang) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
